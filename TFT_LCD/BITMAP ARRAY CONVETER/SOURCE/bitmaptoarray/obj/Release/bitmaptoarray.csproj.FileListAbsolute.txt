@@ -1,0 +1,8 @@
+C:\Users\Huub\Documents\pic projecten\usb\eigenprog\bitmaptoarray\bitmaptoarray\bin\Release\bitmaptoarray.exe
+C:\Users\Huub\Documents\pic projecten\usb\eigenprog\bitmaptoarray\bitmaptoarray\bin\Release\bitmaptoarray.pdb
+C:\Users\Huub\Documents\pic projecten\usb\eigenprog\bitmaptoarray\bitmaptoarray\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Huub\Documents\pic projecten\usb\eigenprog\bitmaptoarray\bitmaptoarray\obj\Release\bitmaptoarray.Form1.resources
+C:\Users\Huub\Documents\pic projecten\usb\eigenprog\bitmaptoarray\bitmaptoarray\obj\Release\bitmaptoarray.Properties.Resources.resources
+C:\Users\Huub\Documents\pic projecten\usb\eigenprog\bitmaptoarray\bitmaptoarray\obj\Release\bitmaptoarray.csproj.GenerateResource.Cache
+C:\Users\Huub\Documents\pic projecten\usb\eigenprog\bitmaptoarray\bitmaptoarray\obj\Release\bitmaptoarray.exe
+C:\Users\Huub\Documents\pic projecten\usb\eigenprog\bitmaptoarray\bitmaptoarray\obj\Release\bitmaptoarray.pdb

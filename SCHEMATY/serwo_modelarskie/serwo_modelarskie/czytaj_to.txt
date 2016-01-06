@@ -1,0 +1,40 @@
+I. Kompilacja  przyk³adów 
+
+Kompilowaæ wykorzystuj¹c do³¹czony plik Makefile!
+
+Zak³adam, ¿e na komputerze jest zainstalowny "WinAVR"
+
+Kompilacja w edytorze Programmer's Notepad
+
+1. Wchodzisz do katalogu projektu 
+2. Otwierasz  plik main.c "z pomoc¹"  Programmer's Notepad
+3. W menu edytora Programmer's Notepad wybierasz opcjê: 
+ 
+   Tools->Make All     - kompiluje pliki Ÿród³owe, 
+   Tools->Make Clean   - czyœci katalog,
+   Tools->Make Program - programuje uk³ad.
+
+
+Kompilacja w wierszu poleceñ windows
+
+1. W katalogu projektu uruchamiasz "wiersz poleceñ"    
+2. Wpisujesz polecenia:
+   
+   make all     - kompiluje pliki Ÿród³owe,
+   make clean   - czyœci katalog,
+   make program - programuje uk³ad.
+
+
+II. Programowanie fuse bitów 
+
+    Aby zmieniæ  czêstotliwoœæ taktowania mikrokontrolera ATmega8 
+    z fabrycznie ustawionego 1MHz na 16MHz, nale¿y przeprogramowaæ 
+    fuse-bity, w tym celu otwierasz wiersz poleceñ windowsa i wpisujesz
+    linijkê: 
+   
+    avrdude -c usbasp -p m8 -U hfuse:w:0xc9:m -U lfuse:w:0xef:m
+   
+    Ostro¿nie!  Pomy³ka przy programowaniu fuse-bitów mo¿e "zablokowaæ"
+    mikrokontroler.
+
+

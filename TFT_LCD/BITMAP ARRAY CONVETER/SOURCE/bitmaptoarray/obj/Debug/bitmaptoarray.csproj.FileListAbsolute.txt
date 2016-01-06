@@ -1,0 +1,18 @@
+C:\Users\Huub\AppData\Local\Temporary Projects\bitmaptoarray\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Huub\AppData\Local\Temporary Projects\bitmaptoarray\obj\Debug\bitmaptoarray.Form1.resources
+C:\Users\Huub\AppData\Local\Temporary Projects\bitmaptoarray\obj\Debug\bitmaptoarray.Properties.Resources.resources
+C:\Users\Huub\AppData\Local\Temporary Projects\bitmaptoarray\obj\Debug\bitmaptoarray.csproj.GenerateResource.Cache
+C:\Users\Huub\AppData\Local\Temporary Projects\bitmaptoarray\bin\Debug\bitmaptoarray.exe
+C:\Users\Huub\AppData\Local\Temporary Projects\bitmaptoarray\bin\Debug\bitmaptoarray.pdb
+C:\Users\Huub\AppData\Local\Temporary Projects\bitmaptoarray\obj\Debug\bitmaptoarray.exe
+C:\Users\Huub\AppData\Local\Temporary Projects\bitmaptoarray\obj\Debug\bitmaptoarray.pdb
+C:\Users\Huub\Documents\pic projecten\usb\eigenprog\bitmaptoarray\bitmaptoarray\obj\Debug\bitmaptoarray.exe
+C:\Users\Huub\Documents\pic projecten\usb\eigenprog\bitmaptoarray\bitmaptoarray\obj\Debug\bitmaptoarray.pdb
+C:\Users\Huub\Documents\pic projecten\usb\eigenprog\bitmaptoarray\bitmaptoarray\bin\Debug\bitmaptoarray.exe
+C:\Users\Huub\Documents\pic projecten\usb\eigenprog\bitmaptoarray\bitmaptoarray\bin\Debug\bitmaptoarray.pdb
+C:\Users\Huub\Documents\pic projecten\usb\eigenprog\bitmaptoarray\bitmaptoarray\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Huub\Documents\pic projecten\usb\eigenprog\bitmaptoarray\bitmaptoarray\obj\Debug\bitmaptoarray.Form1.resources
+C:\Users\Huub\Documents\pic projecten\usb\eigenprog\bitmaptoarray\bitmaptoarray\obj\Debug\bitmaptoarray.Properties.Resources.resources
+C:\Users\Huub\Documents\pic projecten\usb\eigenprog\bitmaptoarray\bitmaptoarray\obj\Debug\bitmaptoarray.csproj.GenerateResource.Cache
+C:\Users\Huub\Documents\hmsprojects\TFT_LCD\BITMAP ARRAY CONVETER\SOURCE\bitmaptoarray\obj\Debug\bitmaptoarray.exe
+C:\Users\Huub\Documents\hmsprojects\TFT_LCD\BITMAP ARRAY CONVETER\SOURCE\bitmaptoarray\obj\Debug\bitmaptoarray.pdb

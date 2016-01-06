@@ -1,0 +1,59 @@
+#release 1.1.4
+
+-add function ConsolePrintf ( and ConsoleGotoX,ConsoleGotoY,ConsoleSwapColor)
+-change function LCD_Print with ConsolePrint or ConsolePrintf 
+-rearrange font.h to fonts.h and font_standard.h
+-FileList with LFN support. Only 2 files can be add in List because not enough memory
+could be higher if List is save in SDCard or if just work without LFN support.
+
+#release 1.1.3
+
+-add variable "UserFont"
+-rewrite function Lcd_print ( SSD1289.c ) and change width of font_standard ( fonts.c )
+-add function FAT_Filename who can get Long File Name  ( FAT.c ) 
+-add console ( with function ConsolePrint,ConsoleClear,ConsoleGoto ) 
+-begin Structure FileList for Next Release => File Selection.  
+
+#release 1.1.2
+
+-add 16 bits color structure
+-add read bmp file with 16 bits format ( bmp file convert by GIMP )
+-add starfield demo
+-add mini font 4*6
+-add dummy char to font.h for match ASCII 
+ 
+
+#release 1.1.1
+
+-use 2x8bits (16 bits) color in function to avoid convertions
+
+#release 1.1.0
+
+-add 16 bits color header "color16bits.h" rename color.h to color24bits.h
+-use 16 bits color in function to avoid convertions
+
+#release 1.1a
+
+-optimize resistive touch driver
+
+#release 1.0.9c
+
+-add possibility to use malloc ( example in file text.c)
+-some optimizations
+
+#release 1.0.9b
+
+-add background and data color to function SD_ReadFile
+-bugfix function SD_ReadBmpFile and SD_WriteFile
+-Add INCOMPLETE_BUFFER_READ and UNSUPPORTED_COMPRESSION and NO MORE FREE CLUSTER error for sd status
+
+
+#release 1.0.9a
+
+-bugfix fonction FAT_LS and add background and data color 
+-change function name Lcd_show to Lcd_PutChar
+-modification to function SD_ReadFile
+-add background and data color to function SD_SysHalt
+-add function SD_ReadBmpFile
+-use LCD TFT with SSD1289 
+-add BAD_FILE_FORMAT error for sd status

@@ -1,0 +1,1489 @@
+
+test1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00001444  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .comment      00000030  00000000  00000000  00001498  2**0
+                  CONTENTS, READONLY
+  2 .debug_aranges 000000a8  00000000  00000000  000014c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_info   00002397  00000000  00000000  00001570  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_abbrev 000002b4  00000000  00000000  00003907  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_line   000004f0  00000000  00000000  00003bbb  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_frame  00000258  00000000  00000000  000040ac  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_str    000002d7  00000000  00000000  00004304  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_loc    00000bcf  00000000  00000000  000045db  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_ranges 00000088  00000000  00000000  000051aa  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+       0:	0c 94 1a 06 	jmp	0xc34	; 0xc34 <__ctors_end>
+       4:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+       8:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+       c:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      10:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      14:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      18:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      1c:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      20:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      24:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      28:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      2c:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      30:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      34:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      38:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      3c:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      40:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      44:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      48:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      4c:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      50:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+
+00000054 <FONT_16x16>:
+	...
+      78:	07 00 0f 80 0f 80 0f 80 0f 80 0f 80 07 00 07 00     ................
+      88:	00 00 00 00 07 00 07 00 07 00 00 00 00 00 0e 38     ...............8
+      98:	0e 38 0e 38 0e 38 06 30 00 00 00 00 00 00 00 00     .8.8.8.0........
+	...
+      b4:	00 00 0c 30 0c 30 0c 30 7f fe 7f fe 0c 30 0c 30     ...0.0.0.....0.0
+      c4:	0c 30 0c 30 7f fe 7f fe 0c 30 0c 30 0c 30 00 00     .0.0.....0.0.0..
+      d4:	00 00 02 40 02 40 0f f8 1f f8 1a 40 1a 40 1f f0     ...@.@.....@.@..
+      e4:	0f f8 02 58 02 58 1f f8 1f f0 02 40 02 40 00 00     ...X.X.....@.@..
+      f4:	00 00 00 00 00 00 0e 10 0e 30 0e 70 00 e0 01 c0     .........0.p....
+     104:	03 80 07 00 0e 70 0c 70 08 70 00 00 00 00 00 00     .....p.p.p......
+     114:	00 00 00 00 0f 00 19 80 19 80 19 80 0f 00 0f 08     ................
+     124:	0f 98 19 f8 18 f0 18 e0 19 f0 0f 98 00 00 00 00     ................
+     134:	00 00 00 00 07 00 07 00 07 00 0e 00 00 00 00 00     ................
+	...
+     158:	00 f0 01 c0 03 80 07 00 0e 00 0e 00 0e 00 0e 00     ................
+     168:	07 00 03 80 01 c0 00 f0 00 00 00 00 00 00 00 00     ................
+     178:	0f 00 03 80 01 c0 00 e0 00 70 00 70 00 70 00 70     .........p.p.p.p
+     188:	00 e0 01 c0 03 80 0f 00 00 00 00 00 00 00 00 00     ................
+     198:	01 80 11 88 09 90 07 e0 07 e0 3f fc 3f fc 07 e0     ..........?.?...
+     1a8:	07 e0 09 90 11 88 01 80 00 00 00 00 00 00 00 00     ................
+     1b8:	00 00 00 00 01 80 01 80 01 80 0f f0 0f f0 01 80     ................
+     1c8:	01 80 01 80 00 00 00 00 00 00 00 00 00 00 00 00     ................
+	...
+     1e8:	00 00 07 00 07 00 07 00 0e 00 00 00 00 00 00 00     ................
+	...
+     200:	00 00 1f f8 1f f8 00 00 00 00 00 00 00 00 00 00     ................
+	...
+     228:	00 00 07 00 07 00 07 00 00 00 00 00 00 00 00 00     ................
+     238:	00 02 00 06 00 0e 00 1c 00 38 00 70 00 e0 01 c0     .........8.p....
+     248:	03 80 07 00 0e 00 1c 00 00 00 00 00 00 00 00 00     ................
+     258:	0f f0 1c 38 1c 78 1c f8 1c f8 1d b8 1d b8 1f 38     ...8.x.........8
+     268:	1f 38 1e 38 1c 38 0f f0 00 00 00 00 00 00 00 00     .8.8.8..........
+     278:	01 80 01 80 03 80 1f 80 1f 80 03 80 03 80 03 80     ................
+     288:	03 80 03 80 03 80 1f f0 00 00 00 00 00 00 00 00     ................
+     298:	0f e0 1c 70 1c 38 00 38 00 70 00 e0 01 c0 03 80     ...p.8.8.p......
+     2a8:	07 00 0e 38 1c 38 1f f8 00 00 00 00 00 00 00 00     ...8.8..........
+     2b8:	0f e0 1c 70 1c 38 00 38 00 70 03 c0 03 c0 00 70     ...p.8.8.p.....p
+     2c8:	00 38 1c 38 1c 70 0f e0 00 00 00 00 00 00 00 00     .8.8.p..........
+     2d8:	00 e0 01 e0 03 e0 06 e0 0c e0 18 e0 1f f8 1f f8     ................
+     2e8:	00 e0 00 e0 00 e0 03 f8 00 00 00 00 00 00 00 00     ................
+     2f8:	1f f8 1c 00 1c 00 1c 00 1c 00 1f e0 1f f0 00 78     ...............x
+     308:	00 38 1c 38 1c 70 0f e0 00 00 00 00 00 00 00 00     .8.8.p..........
+     318:	03 e0 07 00 0e 00 1c 00 1c 00 1f f0 1f f8 1c 38     ...............8
+     328:	1c 38 1c 38 1c 38 0f f0 00 00 00 00 00 00 00 00     .8.8.8..........
+     338:	1f fc 1c 1c 1c 1c 1c 1c 00 1c 00 38 00 70 00 e0     ...........8.p..
+     348:	01 c0 03 80 03 80 03 80 00 00 00 00 00 00 00 00     ................
+     358:	0f f0 1c 38 1c 38 1c 38 1f 38 07 e0 07 e0 1c f8     ...8.8.8.8......
+     368:	1c 38 1c 38 1c 38 0f f0 00 00 00 00 00 00 00 00     .8.8.8..........
+     378:	0f f0 1c 38 1c 38 1c 38 1c 38 1f f8 0f f8 00 38     ...8.8.8.8.....8
+     388:	00 38 00 70 00 e0 07 c0 00 00 00 00 00 00 00 00     .8.p............
+     398:	00 00 00 00 03 80 03 80 03 80 00 00 00 00 03 80     ................
+     3a8:	03 80 03 80 00 00 00 00 00 00 00 00 00 00 00 00     ................
+     3b8:	00 00 00 00 03 80 03 80 03 80 00 00 00 00 03 80     ................
+     3c8:	03 80 03 80 07 00 00 00 00 00 00 00 00 00 00 70     ...............p
+     3d8:	00 e0 01 c0 03 80 07 00 0e 00 1c 00 1c 00 0e 00     ................
+     3e8:	07 00 03 80 01 c0 00 e0 00 70 00 00 00 00 00 00     .........p......
+     3f8:	00 00 00 00 00 00 3f fc 3f fc 00 00 00 00 3f fc     ......?.?.....?.
+     408:	3f fc 00 00 00 00 00 00 00 00 00 00 00 00 1c 00     ?...............
+     418:	0e 00 07 00 03 80 01 c0 00 e0 00 70 00 70 00 e0     ...........p.p..
+     428:	01 c0 03 80 07 00 0e 00 1c 00 00 00 00 00 03 c0     ................
+     438:	0f f0 1e 78 18 38 00 38 00 70 00 e0 01 c0 01 c0     ...x.8.8.p......
+     448:	00 00 00 00 01 c0 01 c0 01 c0 00 00 00 00 0f f8     ................
+     458:	1c 1c 1c 1c 1c 1c 1c 1c 1c fc 1c fc 1c fc 1c fc     ................
+     468:	1c 00 1c 00 1c 00 1f f0 07 f8 00 00 00 00 00 00     ................
+     478:	03 c0 07 e0 0e 70 1c 38 1c 38 1c 38 1c 38 1f f8     .....p.8.8.8.8..
+     488:	1c 38 1c 38 1c 38 1c 38 00 00 00 00 00 00 00 00     .8.8.8.8........
+     498:	1f f0 0e 38 0e 38 0e 38 0e 38 0f f0 0f f0 0e 38     ...8.8.8.8.....8
+     4a8:	0e 38 0e 38 0e 38 1f f0 00 00 00 00 00 00 00 00     .8.8.8..........
+     4b8:	07 f0 0e 38 1c 38 1c 00 1c 00 1c 00 1c 00 1c 00     ...8.8..........
+     4c8:	1c 00 1c 38 0e 38 07 f0 00 00 00 00 00 00 00 00     ...8.8..........
+     4d8:	1f e0 0e 70 0e 38 0e 38 0e 38 0e 38 0e 38 0e 38     ...p.8.8.8.8.8.8
+     4e8:	0e 38 0e 38 0e 70 1f e0 00 00 00 00 00 00 00 00     .8.8.p..........
+     4f8:	1f f8 0e 18 0e 08 0e 00 0e 30 0f f0 0f f0 0e 30     .........0.....0
+     508:	0e 00 0e 08 0e 18 1f f8 00 00 00 00 00 00 00 00     ................
+     518:	1f f8 0e 18 0e 08 0e 00 0e 30 0f f0 0f f0 0e 30     .........0.....0
+     528:	0e 00 0e 00 0e 00 1f 00 00 00 00 00 00 00 00 00     ................
+     538:	07 f0 0e 38 1c 38 1c 38 1c 00 1c 00 1c 00 1c f8     ...8.8.8........
+     548:	1c 38 1c 38 0e 38 07 f8 00 00 00 00 00 00 00 00     .8.8.8..........
+     558:	1c 70 1c 70 1c 70 1c 70 1c 70 1f f0 1f f0 1c 70     .p.p.p.p.p.....p
+     568:	1c 70 1c 70 1c 70 1c 70 00 00 00 00 00 00 00 00     .p.p.p.p........
+     578:	0f e0 03 80 03 80 03 80 03 80 03 80 03 80 03 80     ................
+     588:	03 80 03 80 03 80 0f e0 00 00 00 00 00 00 00 00     ................
+     598:	01 fc 00 70 00 70 00 70 00 70 00 70 00 70 38 70     ...p.p.p.p.p.p8p
+     5a8:	38 70 38 70 38 70 0f e0 00 00 00 00 00 00 00 00     8p8p8p..........
+     5b8:	1e 38 0e 38 0e 70 0e e0 0f c0 0f 80 0f 80 0f c0     .8.8.p..........
+     5c8:	0e e0 0e 70 0e 38 1e 38 00 00 00 00 00 00 00 00     ...p.8.8........
+     5d8:	1f 00 0e 00 0e 00 0e 00 0e 00 0e 00 0e 00 0e 00     ................
+     5e8:	0e 08 0e 18 0e 38 1f f8 00 00 00 00 00 00 00 00     .....8..........
+     5f8:	1c 1c 1e 3c 1f 7c 1f fc 1f fc 1d dc 1c 9c 1c 1c     ...<.|..........
+     608:	1c 1c 1c 1c 1c 1c 1c 1c 00 00 00 00 00 00 00 00     ................
+     618:	1c 1c 1c 1c 1e 1c 1f 1c 1f 9c 1d dc 1c fc 1c 7c     ...............|
+     628:	1c 3c 1c 1c 1c 1c 1c 1c 00 00 00 00 00 00 00 00     .<..............
+     638:	03 e0 07 f0 0e 38 1c 1c 1c 1c 1c 1c 1c 1c 1c 1c     .....8..........
+     648:	1c 1c 0e 38 07 f0 03 e0 00 00 00 00 00 00 00 00     ...8............
+     658:	1f f0 0e 38 0e 38 0e 38 0e 38 0f f0 0f f0 0e 00     ...8.8.8.8......
+     668:	0e 00 0e 00 0e 00 1f 00 00 00 00 00 00 00 00 00     ................
+     678:	03 e0 0f 78 0e 38 1c 1c 1c 1c 1c 1c 1c 1c 1c 7c     ...x.8.........|
+     688:	1c fc 0f f8 0f f8 00 38 00 fc 00 00 00 00 00 00     .......8........
+     698:	1f f0 0e 38 0e 38 0e 38 0e 38 0f f0 0f f0 0e 70     ...8.8.8.8.....p
+     6a8:	0e 38 0e 38 0e 38 1e 38 00 00 00 00 00 00 00 00     .8.8.8.8........
+     6b8:	0f f0 1c 38 1c 38 1c 38 1c 00 0f e0 07 f0 00 38     ...8.8.8.......8
+     6c8:	1c 38 1c 38 1c 38 0f f0 00 00 00 00 00 00 00 00     .8.8.8..........
+     6d8:	1f fc 19 cc 11 c4 01 c0 01 c0 01 c0 01 c0 01 c0     ................
+     6e8:	01 c0 01 c0 01 c0 07 f0 00 00 00 00 00 00 00 00     ................
+     6f8:	1c 70 1c 70 1c 70 1c 70 1c 70 1c 70 1c 70 1c 70     .p.p.p.p.p.p.p.p
+     708:	1c 70 1c 70 1c 70 0f e0 00 00 00 00 00 00 00 00     .p.p.p..........
+     718:	1c 70 1c 70 1c 70 1c 70 1c 70 1c 70 1c 70 1c 70     .p.p.p.p.p.p.p.p
+     728:	1c 70 0e e0 07 c0 03 80 00 00 00 00 00 00 00 00     .p..............
+     738:	1c 1c 1c 1c 1c 1c 1c 1c 1c 1c 1c 9c 1c 9c 1c 9c     ................
+     748:	0f f8 0f f8 07 70 07 70 00 00 00 00 00 00 00 00     .....p.p........
+     758:	1c 70 1c 70 1c 70 0e e0 07 c0 03 80 03 80 07 c0     .p.p.p..........
+     768:	0e e0 1c 70 1c 70 1c 70 00 00 00 00 00 00 00 00     ...p.p.p........
+     778:	1c 70 1c 70 1c 70 1c 70 1c 70 0e e0 07 c0 03 80     .p.p.p.p.p......
+     788:	03 80 03 80 03 80 0f e0 00 00 00 00 00 00 00 00     ................
+     798:	1f f8 1c 38 18 38 10 70 00 e0 01 c0 03 80 07 00     ...8.8.p........
+     7a8:	0e 08 1c 18 1c 38 1f f8 00 00 00 00 00 00 00 00     .....8..........
+     7b8:	07 f0 07 00 07 00 07 00 07 00 07 00 07 00 07 00     ................
+     7c8:	07 00 07 00 07 00 07 f0 00 00 00 00 00 00 00 00     ................
+     7d8:	10 00 18 00 1c 00 0e 00 07 00 03 80 01 c0 00 e0     ................
+     7e8:	00 70 00 38 00 1c 00 07 00 00 00 00 00 00 00 00     .p.8............
+     7f8:	07 f0 00 70 00 70 00 70 00 70 00 70 00 70 00 70     ...p.p.p.p.p.p.p
+     808:	00 70 00 70 00 70 07 f0 00 00 00 00 00 00 01 80     .p.p.p..........
+     818:	03 c0 07 e0 0e 70 1c 38 00 00 00 00 00 00 00 00     .....p.8........
+	...
+     850:	7f ff 7f ff 00 00 00 00 1c 00 1c 00 07 00 07 00     ................
+	...
+     880:	0f e0 00 70 00 70 0f f0 1c 70 1c 70 1c 70 0f d8     ...p.p...p.p.p..
+	...
+     898:	1e 00 0e 00 0e 00 0e 00 0f f0 0e 38 0e 38 0e 38     ...........8.8.8
+     8a8:	0e 38 0e 38 0e 38 1b f0 00 00 00 00 00 00 00 00     .8.8.8..........
+	...
+     8c0:	0f e0 1c 70 1c 70 1c 00 1c 00 1c 70 1c 70 0f e0     ...p.p.....p.p..
+	...
+     8d8:	00 f8 00 70 00 70 00 70 0f f0 1c 70 1c 70 1c 70     ...p.p.p...p.p.p
+     8e8:	1c 70 1c 70 1c 70 0f d8 00 00 00 00 00 00 00 00     .p.p.p..........
+	...
+     900:	0f e0 1c 70 1c 70 1f f0 1c 00 1c 70 1c 70 0f e0     ...p.p.....p.p..
+	...
+     918:	03 e0 07 70 07 70 07 00 07 00 1f e0 1f e0 07 00     ...p.p..........
+     928:	07 00 07 00 07 00 1f c0 00 00 00 00 00 00 00 00     ................
+	...
+     940:	0f d8 1c 70 1c 70 1c 70 1c 70 0f f0 07 f0 00 70     ...p.p.p.p.....p
+     950:	1c 70 0f e0 00 00 00 00 1e 00 0e 00 0e 00 0e 00     .p..............
+     960:	0e f0 0f 38 0f 38 0e 38 0e 38 0e 38 0e 38 1e 38     ...8.8.8.8.8.8.8
+	...
+     978:	01 c0 01 c0 01 c0 00 00 0f c0 01 c0 01 c0 01 c0     ................
+     988:	01 c0 01 c0 01 c0 0f f8 00 00 00 00 00 00 00 00     ................
+     998:	00 70 00 70 00 70 00 00 03 f0 00 70 00 70 00 70     .p.p.p.....p.p.p
+     9a8:	00 70 00 70 00 70 1c 70 0c f0 07 e0 00 00 00 00     .p.p.p.p........
+     9b8:	1e 00 0e 00 0e 00 0e 00 0e 38 0e 70 0e e0 0f c0     .........8.p....
+     9c8:	0e e0 0e 70 0e 38 1e 38 00 00 00 00 00 00 00 00     ...p.8.8........
+     9d8:	0f c0 01 c0 01 c0 01 c0 01 c0 01 c0 01 c0 01 c0     ................
+     9e8:	01 c0 01 c0 01 c0 0f f8 00 00 00 00 00 00 00 00     ................
+	...
+     a00:	1f f8 1c 9c 1c 9c 1c 9c 1c 9c 1c 9c 1c 9c 1c 9c     ................
+	...
+     a20:	1f e0 1c 70 1c 70 1c 70 1c 70 1c 70 1c 70 1c 70     ...p.p.p.p.p.p.p
+	...
+     a40:	0f e0 1c 70 1c 70 1c 70 1c 70 1c 70 1c 70 0f e0     ...p.p.p.p.p.p..
+	...
+     a60:	1b f0 0e 38 0e 38 0e 38 0e 38 0e 38 0f f0 0e 00     ...8.8.8.8.8....
+     a70:	0e 00 1f 00 00 00 00 00 00 00 00 00 00 00 00 00     ................
+     a80:	1f b0 38 e0 38 e0 38 e0 38 e0 38 e0 1f e0 00 e0     ..8.8.8.8.8.....
+     a90:	00 e0 01 f0 00 00 00 00 00 00 00 00 00 00 00 00     ................
+     aa0:	1e f0 0f f8 0f 38 0e 00 0e 00 0e 00 0e 00 1f 00     .....8..........
+	...
+     ac0:	0f e0 1c 30 1c 30 0f 80 03 e0 18 70 18 70 0f e0     ...0.0.....p.p..
+	...
+     ad8:	00 00 01 00 03 00 07 00 1f f0 07 00 07 00 07 00     ................
+     ae8:	07 00 07 70 07 70 03 e0 00 00 00 00 00 00 00 00     ...p.p..........
+	...
+     b00:	1c 70 1c 70 1c 70 1c 70 1c 70 1c 70 1c 70 0f d8     .p.p.p.p.p.p.p..
+	...
+     b20:	1c 70 1c 70 1c 70 1c 70 1c 70 0e e0 07 c0 03 80     .p.p.p.p.p......
+	...
+     b40:	1c 1c 1c 1c 1c 1c 1c 9c 1c 9c 0f f8 07 70 07 70     .............p.p
+	...
+     b60:	1c e0 1c e0 0f c0 07 80 07 80 0f c0 1c e0 1c e0     ................
+	...
+     b80:	0e 38 0e 38 0e 38 0e 38 0e 38 07 f0 03 e0 00 e0     .8.8.8.8.8......
+     b90:	01 c0 1f 80 00 00 00 00 00 00 00 00 00 00 00 00     ................
+     ba0:	1f e0 18 e0 11 c0 03 80 07 00 0e 20 1c 60 1f e0     ........... .`..
+	...
+     bb8:	01 f8 03 80 03 80 03 80 07 00 1c 00 1c 00 07 00     ................
+     bc8:	03 80 03 80 03 80 01 f8 00 00 00 00 00 00 01 c0     ................
+     bd8:	01 c0 01 c0 01 c0 01 c0 01 c0 01 c0 01 c0 01 c0     ................
+     be8:	01 c0 01 c0 01 c0 01 c0 01 c0 00 00 00 00 00 00     ................
+     bf8:	1f 80 01 c0 01 c0 01 c0 00 e0 00 38 00 38 00 e0     ...........8.8..
+     c08:	01 c0 01 c0 01 c0 1f 80 00 00 00 00 00 00 00 00     ................
+     c18:	1f 1c 3b 9c 39 dc 38 f8 00 00 00 00 00 00 00 00     ..;.9.8.........
+	...
+
+00000c34 <__ctors_end>:
+     c34:	11 24       	eor	r1, r1
+     c36:	1f be       	out	0x3f, r1	; 63
+     c38:	cf e5       	ldi	r28, 0x5F	; 95
+     c3a:	d4 e0       	ldi	r29, 0x04	; 4
+     c3c:	de bf       	out	0x3e, r29	; 62
+     c3e:	cd bf       	out	0x3d, r28	; 61
+     c40:	0e 94 26 06 	call	0xc4c	; 0xc4c <main>
+     c44:	0c 94 20 0a 	jmp	0x1440	; 0x1440 <_exit>
+
+00000c48 <__bad_interrupt>:
+     c48:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000c4c <main>:
+
+	return temp;
+}
+
+int main(void) {
+	MCUCSR |= (1<<JTD);
+     c4c:	84 b7       	in	r24, 0x34	; 52
+     c4e:	80 68       	ori	r24, 0x80	; 128
+     c50:	84 bf       	out	0x34, r24	; 52
+	MCUCSR |= (1<<JTD);
+     c52:	84 b7       	in	r24, 0x34	; 52
+     c54:	80 68       	ori	r24, 0x80	; 128
+     c56:	84 bf       	out	0x34, r24	; 52
+	MCUCSR |= (1<<JTD);
+     c58:	84 b7       	in	r24, 0x34	; 52
+     c5a:	80 68       	ori	r24, 0x80	; 128
+     c5c:	84 bf       	out	0x34, r24	; 52
+	MCUCSR |= (1<<JTD);
+     c5e:	84 b7       	in	r24, 0x34	; 52
+     c60:	80 68       	ori	r24, 0x80	; 128
+     c62:	84 bf       	out	0x34, r24	; 52
+	configure_as_output(TFT_CS);
+	configure_as_output(TFT_RD);
+	configure_as_output(TFT_RST); */
+
+
+	TFT_init();
+     c64:	0e 94 92 07 	call	0xf24	; 0xf24 <TFT_init>
+
+	// touch_init();
+
+	TFT_fill(0xFFFF);
+     c68:	8f ef       	ldi	r24, 0xFF	; 255
+     c6a:	9f ef       	ldi	r25, 0xFF	; 255
+     c6c:	0e 94 72 07 	call	0xee4	; 0xee4 <TFT_fill>
+
+
+	TFT_char(FONT_16x16, 'D', 5, 5, 0, 0xFFFF, 16, 16);
+     c70:	68 94       	set
+     c72:	aa 24       	eor	r10, r10
+     c74:	a4 f8       	bld	r10, 4
+     c76:	b1 2c       	mov	r11, r1
+     c78:	68 94       	set
+     c7a:	cc 24       	eor	r12, r12
+     c7c:	c4 f8       	bld	r12, 4
+     c7e:	d1 2c       	mov	r13, r1
+     c80:	ee 24       	eor	r14, r14
+     c82:	ea 94       	dec	r14
+     c84:	fe 2c       	mov	r15, r14
+     c86:	00 e0       	ldi	r16, 0x00	; 0
+     c88:	10 e0       	ldi	r17, 0x00	; 0
+     c8a:	25 e0       	ldi	r18, 0x05	; 5
+     c8c:	30 e0       	ldi	r19, 0x00	; 0
+     c8e:	45 e0       	ldi	r20, 0x05	; 5
+     c90:	50 e0       	ldi	r21, 0x00	; 0
+     c92:	64 e4       	ldi	r22, 0x44	; 68
+     c94:	84 e5       	ldi	r24, 0x54	; 84
+     c96:	90 e0       	ldi	r25, 0x00	; 0
+     c98:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 'z', 22, 5, 0, 0xFFFF, 16, 16);
+     c9c:	25 e0       	ldi	r18, 0x05	; 5
+     c9e:	30 e0       	ldi	r19, 0x00	; 0
+     ca0:	46 e1       	ldi	r20, 0x16	; 22
+     ca2:	50 e0       	ldi	r21, 0x00	; 0
+     ca4:	6a e7       	ldi	r22, 0x7A	; 122
+     ca6:	84 e5       	ldi	r24, 0x54	; 84
+     ca8:	90 e0       	ldi	r25, 0x00	; 0
+     caa:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 'i', 39, 5, 0, 0xFFFF, 16, 16);
+     cae:	25 e0       	ldi	r18, 0x05	; 5
+     cb0:	30 e0       	ldi	r19, 0x00	; 0
+     cb2:	47 e2       	ldi	r20, 0x27	; 39
+     cb4:	50 e0       	ldi	r21, 0x00	; 0
+     cb6:	69 e6       	ldi	r22, 0x69	; 105
+     cb8:	84 e5       	ldi	r24, 0x54	; 84
+     cba:	90 e0       	ldi	r25, 0x00	; 0
+     cbc:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 'a', 56, 5, 0, 0xFFFF, 16, 16);
+     cc0:	25 e0       	ldi	r18, 0x05	; 5
+     cc2:	30 e0       	ldi	r19, 0x00	; 0
+     cc4:	48 e3       	ldi	r20, 0x38	; 56
+     cc6:	50 e0       	ldi	r21, 0x00	; 0
+     cc8:	61 e6       	ldi	r22, 0x61	; 97
+     cca:	84 e5       	ldi	r24, 0x54	; 84
+     ccc:	90 e0       	ldi	r25, 0x00	; 0
+     cce:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 'l', 73, 5, 0, 0xFFFF, 16, 16);
+     cd2:	25 e0       	ldi	r18, 0x05	; 5
+     cd4:	30 e0       	ldi	r19, 0x00	; 0
+     cd6:	49 e4       	ldi	r20, 0x49	; 73
+     cd8:	50 e0       	ldi	r21, 0x00	; 0
+     cda:	6c e6       	ldi	r22, 0x6C	; 108
+     cdc:	84 e5       	ldi	r24, 0x54	; 84
+     cde:	90 e0       	ldi	r25, 0x00	; 0
+     ce0:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 'a', 90, 5, 0, 0xFFFF, 16, 16);
+     ce4:	25 e0       	ldi	r18, 0x05	; 5
+     ce6:	30 e0       	ldi	r19, 0x00	; 0
+     ce8:	4a e5       	ldi	r20, 0x5A	; 90
+     cea:	50 e0       	ldi	r21, 0x00	; 0
+     cec:	61 e6       	ldi	r22, 0x61	; 97
+     cee:	84 e5       	ldi	r24, 0x54	; 84
+     cf0:	90 e0       	ldi	r25, 0x00	; 0
+     cf2:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, ' ', 107, 5, 0, 0xFFFF, 16, 16);
+     cf6:	25 e0       	ldi	r18, 0x05	; 5
+     cf8:	30 e0       	ldi	r19, 0x00	; 0
+     cfa:	4b e6       	ldi	r20, 0x6B	; 107
+     cfc:	50 e0       	ldi	r21, 0x00	; 0
+     cfe:	60 e2       	ldi	r22, 0x20	; 32
+     d00:	84 e5       	ldi	r24, 0x54	; 84
+     d02:	90 e0       	ldi	r25, 0x00	; 0
+     d04:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 'L', 124, 5, 0, 0xFFFF, 16, 16);
+     d08:	25 e0       	ldi	r18, 0x05	; 5
+     d0a:	30 e0       	ldi	r19, 0x00	; 0
+     d0c:	4c e7       	ldi	r20, 0x7C	; 124
+     d0e:	50 e0       	ldi	r21, 0x00	; 0
+     d10:	6c e4       	ldi	r22, 0x4C	; 76
+     d12:	84 e5       	ldi	r24, 0x54	; 84
+     d14:	90 e0       	ldi	r25, 0x00	; 0
+     d16:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 'C', 141, 5, 0, 0xFFFF, 16, 16);
+     d1a:	25 e0       	ldi	r18, 0x05	; 5
+     d1c:	30 e0       	ldi	r19, 0x00	; 0
+     d1e:	4d e8       	ldi	r20, 0x8D	; 141
+     d20:	50 e0       	ldi	r21, 0x00	; 0
+     d22:	63 e4       	ldi	r22, 0x43	; 67
+     d24:	84 e5       	ldi	r24, 0x54	; 84
+     d26:	90 e0       	ldi	r25, 0x00	; 0
+     d28:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 'D', 158, 5, 0, 0xFFFF, 16, 16);
+     d2c:	25 e0       	ldi	r18, 0x05	; 5
+     d2e:	30 e0       	ldi	r19, 0x00	; 0
+     d30:	4e e9       	ldi	r20, 0x9E	; 158
+     d32:	50 e0       	ldi	r21, 0x00	; 0
+     d34:	64 e4       	ldi	r22, 0x44	; 68
+     d36:	84 e5       	ldi	r24, 0x54	; 84
+     d38:	90 e0       	ldi	r25, 0x00	; 0
+     d3a:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, ';', 175, 5, 0, 0xFFFF, 16, 16);
+     d3e:	25 e0       	ldi	r18, 0x05	; 5
+     d40:	30 e0       	ldi	r19, 0x00	; 0
+     d42:	4f ea       	ldi	r20, 0xAF	; 175
+     d44:	50 e0       	ldi	r21, 0x00	; 0
+     d46:	6b e3       	ldi	r22, 0x3B	; 59
+     d48:	84 e5       	ldi	r24, 0x54	; 84
+     d4a:	90 e0       	ldi	r25, 0x00	; 0
+     d4c:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 'o', 192, 5, 0, 0xFFFF, 16, 16);
+     d50:	25 e0       	ldi	r18, 0x05	; 5
+     d52:	30 e0       	ldi	r19, 0x00	; 0
+     d54:	40 ec       	ldi	r20, 0xC0	; 192
+     d56:	50 e0       	ldi	r21, 0x00	; 0
+     d58:	6f e6       	ldi	r22, 0x6F	; 111
+     d5a:	84 e5       	ldi	r24, 0x54	; 84
+     d5c:	90 e0       	ldi	r25, 0x00	; 0
+     d5e:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+
+
+	TFT_char(FONT_16x16, 'O', 5, 30, 0, 0xFFFF, 16, 16);
+     d62:	2e e1       	ldi	r18, 0x1E	; 30
+     d64:	30 e0       	ldi	r19, 0x00	; 0
+     d66:	45 e0       	ldi	r20, 0x05	; 5
+     d68:	50 e0       	ldi	r21, 0x00	; 0
+     d6a:	6f e4       	ldi	r22, 0x4F	; 79
+     d6c:	84 e5       	ldi	r24, 0x54	; 84
+     d6e:	90 e0       	ldi	r25, 0x00	; 0
+     d70:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 's', 22, 30, 0, 0xFFFF, 16, 16);
+     d74:	2e e1       	ldi	r18, 0x1E	; 30
+     d76:	30 e0       	ldi	r19, 0x00	; 0
+     d78:	46 e1       	ldi	r20, 0x16	; 22
+     d7a:	50 e0       	ldi	r21, 0x00	; 0
+     d7c:	63 e7       	ldi	r22, 0x73	; 115
+     d7e:	84 e5       	ldi	r24, 0x54	; 84
+     d80:	90 e0       	ldi	r25, 0x00	; 0
+     d82:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 'k', 39, 30, 0, 0xFFFF, 16, 16);
+     d86:	2e e1       	ldi	r18, 0x1E	; 30
+     d88:	30 e0       	ldi	r19, 0x00	; 0
+     d8a:	47 e2       	ldi	r20, 0x27	; 39
+     d8c:	50 e0       	ldi	r21, 0x00	; 0
+     d8e:	6b e6       	ldi	r22, 0x6B	; 107
+     d90:	84 e5       	ldi	r24, 0x54	; 84
+     d92:	90 e0       	ldi	r25, 0x00	; 0
+     d94:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 'u', 56, 30, 0, 0xFFFF, 16, 16);
+     d98:	2e e1       	ldi	r18, 0x1E	; 30
+     d9a:	30 e0       	ldi	r19, 0x00	; 0
+     d9c:	48 e3       	ldi	r20, 0x38	; 56
+     d9e:	50 e0       	ldi	r21, 0x00	; 0
+     da0:	65 e7       	ldi	r22, 0x75	; 117
+     da2:	84 e5       	ldi	r24, 0x54	; 84
+     da4:	90 e0       	ldi	r25, 0x00	; 0
+     da6:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 'r', 73, 30, 0, 0xFFFF, 16, 16);
+     daa:	2e e1       	ldi	r18, 0x1E	; 30
+     dac:	30 e0       	ldi	r19, 0x00	; 0
+     dae:	49 e4       	ldi	r20, 0x49	; 73
+     db0:	50 e0       	ldi	r21, 0x00	; 0
+     db2:	62 e7       	ldi	r22, 0x72	; 114
+     db4:	84 e5       	ldi	r24, 0x54	; 84
+     db6:	90 e0       	ldi	r25, 0x00	; 0
+     db8:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 'w', 90, 30, 0, 0xFFFF, 16, 16);
+     dbc:	2e e1       	ldi	r18, 0x1E	; 30
+     dbe:	30 e0       	ldi	r19, 0x00	; 0
+     dc0:	4a e5       	ldi	r20, 0x5A	; 90
+     dc2:	50 e0       	ldi	r21, 0x00	; 0
+     dc4:	67 e7       	ldi	r22, 0x77	; 119
+     dc6:	84 e5       	ldi	r24, 0x54	; 84
+     dc8:	90 e0       	ldi	r25, 0x00	; 0
+     dca:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 'e', 107, 30, 0, 0xFFFF, 16, 16);
+     dce:	2e e1       	ldi	r18, 0x1E	; 30
+     dd0:	30 e0       	ldi	r19, 0x00	; 0
+     dd2:	4b e6       	ldi	r20, 0x6B	; 107
+     dd4:	50 e0       	ldi	r21, 0x00	; 0
+     dd6:	65 e6       	ldi	r22, 0x65	; 101
+     dd8:	84 e5       	ldi	r24, 0x54	; 84
+     dda:	90 e0       	ldi	r25, 0x00	; 0
+     ddc:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 's', 124, 30, 0, 0xFFFF, 16, 16);
+     de0:	2e e1       	ldi	r18, 0x1E	; 30
+     de2:	30 e0       	ldi	r19, 0x00	; 0
+     de4:	4c e7       	ldi	r20, 0x7C	; 124
+     de6:	50 e0       	ldi	r21, 0x00	; 0
+     de8:	63 e7       	ldi	r22, 0x73	; 115
+     dea:	84 e5       	ldi	r24, 0x54	; 84
+     dec:	90 e0       	ldi	r25, 0x00	; 0
+     dee:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 'y', 141, 30, 0, 0xFFFF, 16, 16);
+     df2:	2e e1       	ldi	r18, 0x1E	; 30
+     df4:	30 e0       	ldi	r19, 0x00	; 0
+     df6:	4d e8       	ldi	r20, 0x8D	; 141
+     df8:	50 e0       	ldi	r21, 0x00	; 0
+     dfa:	69 e7       	ldi	r22, 0x79	; 121
+     dfc:	84 e5       	ldi	r24, 0x54	; 84
+     dfe:	90 e0       	ldi	r25, 0x00	; 0
+     e00:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 'n', 158, 30, 0, 0xFFFF, 16, 16);
+     e04:	2e e1       	ldi	r18, 0x1E	; 30
+     e06:	30 e0       	ldi	r19, 0x00	; 0
+     e08:	4e e9       	ldi	r20, 0x9E	; 158
+     e0a:	50 e0       	ldi	r21, 0x00	; 0
+     e0c:	6e e6       	ldi	r22, 0x6E	; 110
+     e0e:	84 e5       	ldi	r24, 0x54	; 84
+     e10:	90 e0       	ldi	r25, 0x00	; 0
+     e12:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, ':', 175, 30, 0, 0xFFFF, 16, 16);
+     e16:	2e e1       	ldi	r18, 0x1E	; 30
+     e18:	30 e0       	ldi	r19, 0x00	; 0
+     e1a:	4f ea       	ldi	r20, 0xAF	; 175
+     e1c:	50 e0       	ldi	r21, 0x00	; 0
+     e1e:	6a e3       	ldi	r22, 0x3A	; 58
+     e20:	84 e5       	ldi	r24, 0x54	; 84
+     e22:	90 e0       	ldi	r25, 0x00	; 0
+     e24:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+	TFT_char(FONT_16x16, 'D', 192, 30, 0, 0xFFFF, 16, 16);
+     e28:	2e e1       	ldi	r18, 0x1E	; 30
+     e2a:	30 e0       	ldi	r19, 0x00	; 0
+     e2c:	40 ec       	ldi	r20, 0xC0	; 192
+     e2e:	50 e0       	ldi	r21, 0x00	; 0
+     e30:	64 e4       	ldi	r22, 0x44	; 68
+     e32:	84 e5       	ldi	r24, 0x54	; 84
+     e34:	90 e0       	ldi	r25, 0x00	; 0
+     e36:	0e 94 88 09 	call	0x1310	; 0x1310 <TFT_char>
+     e3a:	ff cf       	rjmp	.-2      	; 0xe3a <main+0x1ee>
+
+00000e3c <TFT_write_command>:
+
+#include "TFT.h"
+#include "pins.h"
+
+void TFT_write_command(uint16_t command) {
+	LCD_STER &= ~LCD_RS;
+     e3c:	ac 98       	cbi	0x15, 4	; 21
+
+	LCD_DATA_H = command >> 8;
+     e3e:	98 bb       	out	0x18, r25	; 24
+	LCD_DATA_L = command;
+     e40:	8b bb       	out	0x1b, r24	; 27
+
+	LCD_STER &= ~(LCD_WR);
+     e42:	ad 98       	cbi	0x15, 5	; 21
+	LCD_STER |= (LCD_WR);
+     e44:	ad 9a       	sbi	0x15, 5	; 21
+     e46:	08 95       	ret
+
+00000e48 <TFT_write_data>:
+}
+
+void TFT_write_data(uint16_t data) {
+	LCD_STER |= LCD_RS;
+     e48:	ac 9a       	sbi	0x15, 4	; 21
+
+	LCD_DATA_H = data >> 8;
+     e4a:	98 bb       	out	0x18, r25	; 24
+	LCD_DATA_L = data;
+     e4c:	8b bb       	out	0x1b, r24	; 27
+
+	LCD_STER &= ~(LCD_WR);
+     e4e:	ad 98       	cbi	0x15, 5	; 21
+	LCD_STER |= (LCD_WR);
+     e50:	ad 9a       	sbi	0x15, 5	; 21
+     e52:	08 95       	ret
+
+00000e54 <TFT_write_command_data>:
+}
+
+void TFT_write_command_data(uint16_t command, uint16_t data) {
+     e54:	cf 93       	push	r28
+     e56:	df 93       	push	r29
+     e58:	eb 01       	movw	r28, r22
+  TFT_write_command(command);
+     e5a:	0e 94 1e 07 	call	0xe3c	; 0xe3c <TFT_write_command>
+  TFT_write_data(data);
+     e5e:	ce 01       	movw	r24, r28
+     e60:	0e 94 24 07 	call	0xe48	; 0xe48 <TFT_write_data>
+}
+     e64:	df 91       	pop	r29
+     e66:	cf 91       	pop	r28
+     e68:	08 95       	ret
+
+00000e6a <LCD_Send_SSD1298>:
+
+
+
+void LCD_Send_SSD1298(uint16_t command, uint16_t data) {
+     e6a:	cf 93       	push	r28
+     e6c:	df 93       	push	r29
+     e6e:	eb 01       	movw	r28, r22
+  TFT_write_command(command);
+     e70:	0e 94 1e 07 	call	0xe3c	; 0xe3c <TFT_write_command>
+  TFT_write_data(data);
+     e74:	ce 01       	movw	r24, r28
+     e76:	0e 94 24 07 	call	0xe48	; 0xe48 <TFT_write_data>
+}
+     e7a:	df 91       	pop	r29
+     e7c:	cf 91       	pop	r28
+     e7e:	08 95       	ret
+
+00000e80 <TFT_write_address>:
+
+
+void TFT_write_address(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2) {
+     e80:	ef 92       	push	r14
+     e82:	ff 92       	push	r15
+     e84:	0f 93       	push	r16
+     e86:	1f 93       	push	r17
+     e88:	cf 93       	push	r28
+     e8a:	df 93       	push	r29
+     e8c:	8c 01       	movw	r16, r24
+     e8e:	eb 01       	movw	r28, r22
+     e90:	79 01       	movw	r14, r18
+  TFT_write_command_data(0x0044, (x2 << 8) + x1);
+     e92:	e0 e0       	ldi	r30, 0x00	; 0
+     e94:	f0 e0       	ldi	r31, 0x00	; 0
+     e96:	f4 2f       	mov	r31, r20
+     e98:	bf 01       	movw	r22, r30
+     e9a:	68 0f       	add	r22, r24
+     e9c:	79 1f       	adc	r23, r25
+     e9e:	84 e4       	ldi	r24, 0x44	; 68
+     ea0:	90 e0       	ldi	r25, 0x00	; 0
+     ea2:	0e 94 2a 07 	call	0xe54	; 0xe54 <TFT_write_command_data>
+  TFT_write_command_data(0x0045, y1);
+     ea6:	be 01       	movw	r22, r28
+     ea8:	85 e4       	ldi	r24, 0x45	; 69
+     eaa:	90 e0       	ldi	r25, 0x00	; 0
+     eac:	0e 94 2a 07 	call	0xe54	; 0xe54 <TFT_write_command_data>
+  TFT_write_command_data(0x0046, y2);
+     eb0:	b7 01       	movw	r22, r14
+     eb2:	86 e4       	ldi	r24, 0x46	; 70
+     eb4:	90 e0       	ldi	r25, 0x00	; 0
+     eb6:	0e 94 2a 07 	call	0xe54	; 0xe54 <TFT_write_command_data>
+  TFT_write_command_data(0x004e, x1);
+     eba:	b8 01       	movw	r22, r16
+     ebc:	8e e4       	ldi	r24, 0x4E	; 78
+     ebe:	90 e0       	ldi	r25, 0x00	; 0
+     ec0:	0e 94 2a 07 	call	0xe54	; 0xe54 <TFT_write_command_data>
+  TFT_write_command_data(0x004f, y1);
+     ec4:	be 01       	movw	r22, r28
+     ec6:	8f e4       	ldi	r24, 0x4F	; 79
+     ec8:	90 e0       	ldi	r25, 0x00	; 0
+     eca:	0e 94 2a 07 	call	0xe54	; 0xe54 <TFT_write_command_data>
+  TFT_write_command(0x0022);
+     ece:	82 e2       	ldi	r24, 0x22	; 34
+     ed0:	90 e0       	ldi	r25, 0x00	; 0
+     ed2:	0e 94 1e 07 	call	0xe3c	; 0xe3c <TFT_write_command>
+}
+     ed6:	df 91       	pop	r29
+     ed8:	cf 91       	pop	r28
+     eda:	1f 91       	pop	r17
+     edc:	0f 91       	pop	r16
+     ede:	ff 90       	pop	r15
+     ee0:	ef 90       	pop	r14
+     ee2:	08 95       	ret
+
+00000ee4 <TFT_fill>:
+
+void TFT_fill(uint16_t color) {
+     ee4:	cf 93       	push	r28
+     ee6:	df 93       	push	r29
+     ee8:	ec 01       	movw	r28, r24
+  uint32_t i;
+  LCD_STER &= ~(LCD_CS);
+     eea:	af 98       	cbi	0x15, 7	; 21
+  TFT_write_address(0,0,239,319);
+     eec:	2f e3       	ldi	r18, 0x3F	; 63
+     eee:	31 e0       	ldi	r19, 0x01	; 1
+     ef0:	4f ee       	ldi	r20, 0xEF	; 239
+     ef2:	50 e0       	ldi	r21, 0x00	; 0
+     ef4:	60 e0       	ldi	r22, 0x00	; 0
+     ef6:	70 e0       	ldi	r23, 0x00	; 0
+     ef8:	80 e0       	ldi	r24, 0x00	; 0
+     efa:	90 e0       	ldi	r25, 0x00	; 0
+     efc:	0e 94 40 07 	call	0xe80	; 0xe80 <TFT_write_address>
+  TFT_write_data(color);
+     f00:	ce 01       	movw	r24, r28
+     f02:	0e 94 24 07 	call	0xe48	; 0xe48 <TFT_write_data>
+     f06:	80 e0       	ldi	r24, 0x00	; 0
+     f08:	90 e0       	ldi	r25, 0x00	; 0
+
+  for(i = 0; i <= 0x9600; i++)
+  {
+		LCD_STER &= ~(LCD_WR);
+     f0a:	ad 98       	cbi	0x15, 5	; 21
+		LCD_STER |= (LCD_WR);
+     f0c:	ad 9a       	sbi	0x15, 5	; 21
+		LCD_STER &= ~(LCD_WR);
+     f0e:	ad 98       	cbi	0x15, 5	; 21
+		LCD_STER |= (LCD_WR);
+     f10:	ad 9a       	sbi	0x15, 5	; 21
+     f12:	01 96       	adiw	r24, 0x01	; 1
+  uint32_t i;
+  LCD_STER &= ~(LCD_CS);
+  TFT_write_address(0,0,239,319);
+  TFT_write_data(color);
+
+  for(i = 0; i <= 0x9600; i++)
+     f14:	81 30       	cpi	r24, 0x01	; 1
+     f16:	26 e9       	ldi	r18, 0x96	; 150
+     f18:	92 07       	cpc	r25, r18
+     f1a:	b9 f7       	brne	.-18     	; 0xf0a <TFT_fill+0x26>
+		LCD_STER |= (LCD_WR);
+		LCD_STER &= ~(LCD_WR);
+		LCD_STER |= (LCD_WR);
+  }
+
+  LCD_STER |= (LCD_CS);
+     f1c:	af 9a       	sbi	0x15, 7	; 21
+}
+     f1e:	df 91       	pop	r29
+     f20:	cf 91       	pop	r28
+     f22:	08 95       	ret
+
+00000f24 <TFT_init>:
+	LCD_STER |= (LCD_CS);
+}
+
+void TFT_init(void) {
+
+	LCD_DATA_L_DIR = 0xFF;
+     f24:	8f ef       	ldi	r24, 0xFF	; 255
+     f26:	8a bb       	out	0x1a, r24	; 26
+	LCD_DATA_H_DIR = 0xFF;
+     f28:	87 bb       	out	0x17, r24	; 23
+	LCD_DATA_L = 0xFF;
+     f2a:	8b bb       	out	0x1b, r24	; 27
+	LCD_DATA_H = 0xFF;
+     f2c:	88 bb       	out	0x18, r24	; 24
+
+	LCD_STER_DIR = 0xFF;
+     f2e:	84 bb       	out	0x14, r24	; 20
+	LCD_STER = 0xFF;
+     f30:	85 bb       	out	0x15, r24	; 21
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+     f32:	87 ea       	ldi	r24, 0xA7	; 167
+     f34:	91 e6       	ldi	r25, 0x61	; 97
+     f36:	01 97       	sbiw	r24, 0x01	; 1
+     f38:	f1 f7       	brne	.-4      	; 0xf36 <TFT_init+0x12>
+     f3a:	00 c0       	rjmp	.+0      	; 0xf3c <TFT_init+0x18>
+     f3c:	00 00       	nop
+	_delay_ms(100);
+
+	LCD_STER &= ~(LCD_CS);
+     f3e:	af 98       	cbi	0x15, 7	; 21
+	LCD_STER &= ~(LCD_RESET);
+     f40:	ab 98       	cbi	0x15, 3	; 21
+     f42:	83 ec       	ldi	r24, 0xC3	; 195
+     f44:	99 e0       	ldi	r25, 0x09	; 9
+     f46:	01 97       	sbiw	r24, 0x01	; 1
+     f48:	f1 f7       	brne	.-4      	; 0xf46 <TFT_init+0x22>
+     f4a:	00 c0       	rjmp	.+0      	; 0xf4c <TFT_init+0x28>
+     f4c:	00 00       	nop
+	_delay_ms(10);
+	LCD_STER |= LCD_RESET;
+     f4e:	ab 9a       	sbi	0x15, 3	; 21
+     f50:	83 ec       	ldi	r24, 0xC3	; 195
+     f52:	99 e0       	ldi	r25, 0x09	; 9
+     f54:	01 97       	sbiw	r24, 0x01	; 1
+     f56:	f1 f7       	brne	.-4      	; 0xf54 <TFT_init+0x30>
+     f58:	00 c0       	rjmp	.+0      	; 0xf5a <TFT_init+0x36>
+     f5a:	00 00       	nop
+  TFT_write_command_data(0x004f,0x0000); // GDDRAM Y addr counter
+  TFT_write_command_data(0x004e,0x0000); // GDDRAM X addr counter
+  TFT_write_command(0x0022); // RAM data write*/
+
+
+	 LCD_Send_SSD1298( 0x0000, 0x0001 );    _delay_ms( 5 );
+     f5c:	61 e0       	ldi	r22, 0x01	; 1
+     f5e:	70 e0       	ldi	r23, 0x00	; 0
+     f60:	80 e0       	ldi	r24, 0x00	; 0
+     f62:	90 e0       	ldi	r25, 0x00	; 0
+     f64:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+     f68:	81 ee       	ldi	r24, 0xE1	; 225
+     f6a:	94 e0       	ldi	r25, 0x04	; 4
+     f6c:	01 97       	sbiw	r24, 0x01	; 1
+     f6e:	f1 f7       	brne	.-4      	; 0xf6c <TFT_init+0x48>
+     f70:	00 c0       	rjmp	.+0      	; 0xf72 <TFT_init+0x4e>
+     f72:	00 00       	nop
+		    LCD_Send_SSD1298( 0x0003, 0xA8A4 );    _delay_ms(5);
+     f74:	64 ea       	ldi	r22, 0xA4	; 164
+     f76:	78 ea       	ldi	r23, 0xA8	; 168
+     f78:	83 e0       	ldi	r24, 0x03	; 3
+     f7a:	90 e0       	ldi	r25, 0x00	; 0
+     f7c:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+     f80:	81 ee       	ldi	r24, 0xE1	; 225
+     f82:	94 e0       	ldi	r25, 0x04	; 4
+     f84:	01 97       	sbiw	r24, 0x01	; 1
+     f86:	f1 f7       	brne	.-4      	; 0xf84 <TFT_init+0x60>
+     f88:	00 c0       	rjmp	.+0      	; 0xf8a <TFT_init+0x66>
+     f8a:	00 00       	nop
+		    LCD_Send_SSD1298( 0x000C, 0x0000 );    _delay_ms(5);
+     f8c:	60 e0       	ldi	r22, 0x00	; 0
+     f8e:	70 e0       	ldi	r23, 0x00	; 0
+     f90:	8c e0       	ldi	r24, 0x0C	; 12
+     f92:	90 e0       	ldi	r25, 0x00	; 0
+     f94:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+     f98:	81 ee       	ldi	r24, 0xE1	; 225
+     f9a:	94 e0       	ldi	r25, 0x04	; 4
+     f9c:	01 97       	sbiw	r24, 0x01	; 1
+     f9e:	f1 f7       	brne	.-4      	; 0xf9c <TFT_init+0x78>
+     fa0:	00 c0       	rjmp	.+0      	; 0xfa2 <TFT_init+0x7e>
+     fa2:	00 00       	nop
+		    LCD_Send_SSD1298( 0x000D, 0x080C );    _delay_ms(5);
+     fa4:	6c e0       	ldi	r22, 0x0C	; 12
+     fa6:	78 e0       	ldi	r23, 0x08	; 8
+     fa8:	8d e0       	ldi	r24, 0x0D	; 13
+     faa:	90 e0       	ldi	r25, 0x00	; 0
+     fac:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+     fb0:	81 ee       	ldi	r24, 0xE1	; 225
+     fb2:	94 e0       	ldi	r25, 0x04	; 4
+     fb4:	01 97       	sbiw	r24, 0x01	; 1
+     fb6:	f1 f7       	brne	.-4      	; 0xfb4 <TFT_init+0x90>
+     fb8:	00 c0       	rjmp	.+0      	; 0xfba <TFT_init+0x96>
+     fba:	00 00       	nop
+		    LCD_Send_SSD1298(0x000E,0x2B00);    _delay_ms(5);
+     fbc:	60 e0       	ldi	r22, 0x00	; 0
+     fbe:	7b e2       	ldi	r23, 0x2B	; 43
+     fc0:	8e e0       	ldi	r24, 0x0E	; 14
+     fc2:	90 e0       	ldi	r25, 0x00	; 0
+     fc4:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+     fc8:	81 ee       	ldi	r24, 0xE1	; 225
+     fca:	94 e0       	ldi	r25, 0x04	; 4
+     fcc:	01 97       	sbiw	r24, 0x01	; 1
+     fce:	f1 f7       	brne	.-4      	; 0xfcc <TFT_init+0xa8>
+     fd0:	00 c0       	rjmp	.+0      	; 0xfd2 <TFT_init+0xae>
+     fd2:	00 00       	nop
+		    LCD_Send_SSD1298(0x001E,0x00B0);    _delay_ms(5);
+     fd4:	60 eb       	ldi	r22, 0xB0	; 176
+     fd6:	70 e0       	ldi	r23, 0x00	; 0
+     fd8:	8e e1       	ldi	r24, 0x1E	; 30
+     fda:	90 e0       	ldi	r25, 0x00	; 0
+     fdc:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+     fe0:	81 ee       	ldi	r24, 0xE1	; 225
+     fe2:	94 e0       	ldi	r25, 0x04	; 4
+     fe4:	01 97       	sbiw	r24, 0x01	; 1
+     fe6:	f1 f7       	brne	.-4      	; 0xfe4 <TFT_init+0xc0>
+     fe8:	00 c0       	rjmp	.+0      	; 0xfea <TFT_init+0xc6>
+     fea:	00 00       	nop
+		    LCD_Send_SSD1298(0x0001,0x2B3F);    _delay_ms(5);
+     fec:	6f e3       	ldi	r22, 0x3F	; 63
+     fee:	7b e2       	ldi	r23, 0x2B	; 43
+     ff0:	81 e0       	ldi	r24, 0x01	; 1
+     ff2:	90 e0       	ldi	r25, 0x00	; 0
+     ff4:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+     ff8:	81 ee       	ldi	r24, 0xE1	; 225
+     ffa:	94 e0       	ldi	r25, 0x04	; 4
+     ffc:	01 97       	sbiw	r24, 0x01	; 1
+     ffe:	f1 f7       	brne	.-4      	; 0xffc <TFT_init+0xd8>
+    1000:	00 c0       	rjmp	.+0      	; 0x1002 <TFT_init+0xde>
+    1002:	00 00       	nop
+		    LCD_Send_SSD1298(0x0002,0x0600);    _delay_ms(5);
+    1004:	60 e0       	ldi	r22, 0x00	; 0
+    1006:	76 e0       	ldi	r23, 0x06	; 6
+    1008:	82 e0       	ldi	r24, 0x02	; 2
+    100a:	90 e0       	ldi	r25, 0x00	; 0
+    100c:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1010:	81 ee       	ldi	r24, 0xE1	; 225
+    1012:	94 e0       	ldi	r25, 0x04	; 4
+    1014:	01 97       	sbiw	r24, 0x01	; 1
+    1016:	f1 f7       	brne	.-4      	; 0x1014 <TFT_init+0xf0>
+    1018:	00 c0       	rjmp	.+0      	; 0x101a <TFT_init+0xf6>
+    101a:	00 00       	nop
+		    LCD_Send_SSD1298(0x0010,0x0000);    _delay_ms(30);
+    101c:	60 e0       	ldi	r22, 0x00	; 0
+    101e:	70 e0       	ldi	r23, 0x00	; 0
+    1020:	80 e1       	ldi	r24, 0x10	; 16
+    1022:	90 e0       	ldi	r25, 0x00	; 0
+    1024:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1028:	8b e4       	ldi	r24, 0x4B	; 75
+    102a:	9d e1       	ldi	r25, 0x1D	; 29
+    102c:	01 97       	sbiw	r24, 0x01	; 1
+    102e:	f1 f7       	brne	.-4      	; 0x102c <TFT_init+0x108>
+    1030:	00 c0       	rjmp	.+0      	; 0x1032 <TFT_init+0x10e>
+    1032:	00 00       	nop
+		    LCD_Send_SSD1298(0x0011,0x6870);    _delay_ms(5);
+    1034:	60 e7       	ldi	r22, 0x70	; 112
+    1036:	78 e6       	ldi	r23, 0x68	; 104
+    1038:	81 e1       	ldi	r24, 0x11	; 17
+    103a:	90 e0       	ldi	r25, 0x00	; 0
+    103c:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1040:	81 ee       	ldi	r24, 0xE1	; 225
+    1042:	94 e0       	ldi	r25, 0x04	; 4
+    1044:	01 97       	sbiw	r24, 0x01	; 1
+    1046:	f1 f7       	brne	.-4      	; 0x1044 <TFT_init+0x120>
+    1048:	00 c0       	rjmp	.+0      	; 0x104a <TFT_init+0x126>
+    104a:	00 00       	nop
+		    LCD_Send_SSD1298(0x0007,0b0001100100110011);    _delay_ms(5); //!!!!!
+    104c:	63 e3       	ldi	r22, 0x33	; 51
+    104e:	79 e1       	ldi	r23, 0x19	; 25
+    1050:	87 e0       	ldi	r24, 0x07	; 7
+    1052:	90 e0       	ldi	r25, 0x00	; 0
+    1054:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1058:	81 ee       	ldi	r24, 0xE1	; 225
+    105a:	94 e0       	ldi	r25, 0x04	; 4
+    105c:	01 97       	sbiw	r24, 0x01	; 1
+    105e:	f1 f7       	brne	.-4      	; 0x105c <TFT_init+0x138>
+    1060:	00 c0       	rjmp	.+0      	; 0x1062 <TFT_init+0x13e>
+    1062:	00 00       	nop
+		    LCD_Send_SSD1298(0x0005,0x0000);    _delay_ms(5);
+    1064:	60 e0       	ldi	r22, 0x00	; 0
+    1066:	70 e0       	ldi	r23, 0x00	; 0
+    1068:	85 e0       	ldi	r24, 0x05	; 5
+    106a:	90 e0       	ldi	r25, 0x00	; 0
+    106c:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1070:	81 ee       	ldi	r24, 0xE1	; 225
+    1072:	94 e0       	ldi	r25, 0x04	; 4
+    1074:	01 97       	sbiw	r24, 0x01	; 1
+    1076:	f1 f7       	brne	.-4      	; 0x1074 <TFT_init+0x150>
+    1078:	00 c0       	rjmp	.+0      	; 0x107a <TFT_init+0x156>
+    107a:	00 00       	nop
+		    LCD_Send_SSD1298(0x0006,0x0000);    _delay_ms(5);
+    107c:	60 e0       	ldi	r22, 0x00	; 0
+    107e:	70 e0       	ldi	r23, 0x00	; 0
+    1080:	86 e0       	ldi	r24, 0x06	; 6
+    1082:	90 e0       	ldi	r25, 0x00	; 0
+    1084:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1088:	81 ee       	ldi	r24, 0xE1	; 225
+    108a:	94 e0       	ldi	r25, 0x04	; 4
+    108c:	01 97       	sbiw	r24, 0x01	; 1
+    108e:	f1 f7       	brne	.-4      	; 0x108c <TFT_init+0x168>
+    1090:	00 c0       	rjmp	.+0      	; 0x1092 <TFT_init+0x16e>
+    1092:	00 00       	nop
+		    LCD_Send_SSD1298(0x0016,0xEF1C);    _delay_ms(5);
+    1094:	6c e1       	ldi	r22, 0x1C	; 28
+    1096:	7f ee       	ldi	r23, 0xEF	; 239
+    1098:	86 e1       	ldi	r24, 0x16	; 22
+    109a:	90 e0       	ldi	r25, 0x00	; 0
+    109c:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    10a0:	81 ee       	ldi	r24, 0xE1	; 225
+    10a2:	94 e0       	ldi	r25, 0x04	; 4
+    10a4:	01 97       	sbiw	r24, 0x01	; 1
+    10a6:	f1 f7       	brne	.-4      	; 0x10a4 <TFT_init+0x180>
+    10a8:	00 c0       	rjmp	.+0      	; 0x10aa <TFT_init+0x186>
+    10aa:	00 00       	nop
+		    LCD_Send_SSD1298(0x0017,0x0003);    _delay_ms(5);
+    10ac:	63 e0       	ldi	r22, 0x03	; 3
+    10ae:	70 e0       	ldi	r23, 0x00	; 0
+    10b0:	87 e1       	ldi	r24, 0x17	; 23
+    10b2:	90 e0       	ldi	r25, 0x00	; 0
+    10b4:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    10b8:	81 ee       	ldi	r24, 0xE1	; 225
+    10ba:	94 e0       	ldi	r25, 0x04	; 4
+    10bc:	01 97       	sbiw	r24, 0x01	; 1
+    10be:	f1 f7       	brne	.-4      	; 0x10bc <TFT_init+0x198>
+    10c0:	00 c0       	rjmp	.+0      	; 0x10c2 <TFT_init+0x19e>
+    10c2:	00 00       	nop
+		    LCD_Send_SSD1298(0x000B,0x0000);    _delay_ms(5);
+    10c4:	60 e0       	ldi	r22, 0x00	; 0
+    10c6:	70 e0       	ldi	r23, 0x00	; 0
+    10c8:	8b e0       	ldi	r24, 0x0B	; 11
+    10ca:	90 e0       	ldi	r25, 0x00	; 0
+    10cc:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    10d0:	81 ee       	ldi	r24, 0xE1	; 225
+    10d2:	94 e0       	ldi	r25, 0x04	; 4
+    10d4:	01 97       	sbiw	r24, 0x01	; 1
+    10d6:	f1 f7       	brne	.-4      	; 0x10d4 <TFT_init+0x1b0>
+    10d8:	00 c0       	rjmp	.+0      	; 0x10da <TFT_init+0x1b6>
+    10da:	00 00       	nop
+		    LCD_Send_SSD1298(0x000F,0x0000);    _delay_ms(5);
+    10dc:	60 e0       	ldi	r22, 0x00	; 0
+    10de:	70 e0       	ldi	r23, 0x00	; 0
+    10e0:	8f e0       	ldi	r24, 0x0F	; 15
+    10e2:	90 e0       	ldi	r25, 0x00	; 0
+    10e4:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    10e8:	81 ee       	ldi	r24, 0xE1	; 225
+    10ea:	94 e0       	ldi	r25, 0x04	; 4
+    10ec:	01 97       	sbiw	r24, 0x01	; 1
+    10ee:	f1 f7       	brne	.-4      	; 0x10ec <TFT_init+0x1c8>
+    10f0:	00 c0       	rjmp	.+0      	; 0x10f2 <TFT_init+0x1ce>
+    10f2:	00 00       	nop
+		    LCD_Send_SSD1298(0x0041,0x0000);    _delay_ms(5);
+    10f4:	60 e0       	ldi	r22, 0x00	; 0
+    10f6:	70 e0       	ldi	r23, 0x00	; 0
+    10f8:	81 e4       	ldi	r24, 0x41	; 65
+    10fa:	90 e0       	ldi	r25, 0x00	; 0
+    10fc:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1100:	81 ee       	ldi	r24, 0xE1	; 225
+    1102:	94 e0       	ldi	r25, 0x04	; 4
+    1104:	01 97       	sbiw	r24, 0x01	; 1
+    1106:	f1 f7       	brne	.-4      	; 0x1104 <TFT_init+0x1e0>
+    1108:	00 c0       	rjmp	.+0      	; 0x110a <TFT_init+0x1e6>
+    110a:	00 00       	nop
+		    LCD_Send_SSD1298(0x0042,0x0000);    _delay_ms(5);
+    110c:	60 e0       	ldi	r22, 0x00	; 0
+    110e:	70 e0       	ldi	r23, 0x00	; 0
+    1110:	82 e4       	ldi	r24, 0x42	; 66
+    1112:	90 e0       	ldi	r25, 0x00	; 0
+    1114:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1118:	81 ee       	ldi	r24, 0xE1	; 225
+    111a:	94 e0       	ldi	r25, 0x04	; 4
+    111c:	01 97       	sbiw	r24, 0x01	; 1
+    111e:	f1 f7       	brne	.-4      	; 0x111c <TFT_init+0x1f8>
+    1120:	00 c0       	rjmp	.+0      	; 0x1122 <TFT_init+0x1fe>
+    1122:	00 00       	nop
+		    LCD_Send_SSD1298(0x0048,0x0000);    _delay_ms(5);
+    1124:	60 e0       	ldi	r22, 0x00	; 0
+    1126:	70 e0       	ldi	r23, 0x00	; 0
+    1128:	88 e4       	ldi	r24, 0x48	; 72
+    112a:	90 e0       	ldi	r25, 0x00	; 0
+    112c:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1130:	81 ee       	ldi	r24, 0xE1	; 225
+    1132:	94 e0       	ldi	r25, 0x04	; 4
+    1134:	01 97       	sbiw	r24, 0x01	; 1
+    1136:	f1 f7       	brne	.-4      	; 0x1134 <TFT_init+0x210>
+    1138:	00 c0       	rjmp	.+0      	; 0x113a <TFT_init+0x216>
+    113a:	00 00       	nop
+		    LCD_Send_SSD1298(0x0049,0x013F);    _delay_ms(5);
+    113c:	6f e3       	ldi	r22, 0x3F	; 63
+    113e:	71 e0       	ldi	r23, 0x01	; 1
+    1140:	89 e4       	ldi	r24, 0x49	; 73
+    1142:	90 e0       	ldi	r25, 0x00	; 0
+    1144:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1148:	81 ee       	ldi	r24, 0xE1	; 225
+    114a:	94 e0       	ldi	r25, 0x04	; 4
+    114c:	01 97       	sbiw	r24, 0x01	; 1
+    114e:	f1 f7       	brne	.-4      	; 0x114c <TFT_init+0x228>
+    1150:	00 c0       	rjmp	.+0      	; 0x1152 <TFT_init+0x22e>
+    1152:	00 00       	nop
+		    LCD_Send_SSD1298(0x004B,0x0000);    _delay_ms(5);
+    1154:	60 e0       	ldi	r22, 0x00	; 0
+    1156:	70 e0       	ldi	r23, 0x00	; 0
+    1158:	8b e4       	ldi	r24, 0x4B	; 75
+    115a:	90 e0       	ldi	r25, 0x00	; 0
+    115c:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1160:	81 ee       	ldi	r24, 0xE1	; 225
+    1162:	94 e0       	ldi	r25, 0x04	; 4
+    1164:	01 97       	sbiw	r24, 0x01	; 1
+    1166:	f1 f7       	brne	.-4      	; 0x1164 <TFT_init+0x240>
+    1168:	00 c0       	rjmp	.+0      	; 0x116a <TFT_init+0x246>
+    116a:	00 00       	nop
+		    LCD_Send_SSD1298(0x0044,0xEF00);    _delay_ms(5);
+    116c:	60 e0       	ldi	r22, 0x00	; 0
+    116e:	7f ee       	ldi	r23, 0xEF	; 239
+    1170:	84 e4       	ldi	r24, 0x44	; 68
+    1172:	90 e0       	ldi	r25, 0x00	; 0
+    1174:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1178:	81 ee       	ldi	r24, 0xE1	; 225
+    117a:	94 e0       	ldi	r25, 0x04	; 4
+    117c:	01 97       	sbiw	r24, 0x01	; 1
+    117e:	f1 f7       	brne	.-4      	; 0x117c <TFT_init+0x258>
+    1180:	00 c0       	rjmp	.+0      	; 0x1182 <TFT_init+0x25e>
+    1182:	00 00       	nop
+		    LCD_Send_SSD1298(0x0045,0x0000);    _delay_ms(5);
+    1184:	60 e0       	ldi	r22, 0x00	; 0
+    1186:	70 e0       	ldi	r23, 0x00	; 0
+    1188:	85 e4       	ldi	r24, 0x45	; 69
+    118a:	90 e0       	ldi	r25, 0x00	; 0
+    118c:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1190:	81 ee       	ldi	r24, 0xE1	; 225
+    1192:	94 e0       	ldi	r25, 0x04	; 4
+    1194:	01 97       	sbiw	r24, 0x01	; 1
+    1196:	f1 f7       	brne	.-4      	; 0x1194 <TFT_init+0x270>
+    1198:	00 c0       	rjmp	.+0      	; 0x119a <TFT_init+0x276>
+    119a:	00 00       	nop
+		    LCD_Send_SSD1298(0x0046,0x013F);    _delay_ms(5);
+    119c:	6f e3       	ldi	r22, 0x3F	; 63
+    119e:	71 e0       	ldi	r23, 0x01	; 1
+    11a0:	86 e4       	ldi	r24, 0x46	; 70
+    11a2:	90 e0       	ldi	r25, 0x00	; 0
+    11a4:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    11a8:	81 ee       	ldi	r24, 0xE1	; 225
+    11aa:	94 e0       	ldi	r25, 0x04	; 4
+    11ac:	01 97       	sbiw	r24, 0x01	; 1
+    11ae:	f1 f7       	brne	.-4      	; 0x11ac <TFT_init+0x288>
+    11b0:	00 c0       	rjmp	.+0      	; 0x11b2 <TFT_init+0x28e>
+    11b2:	00 00       	nop
+		    LCD_Send_SSD1298(0x0030,0x0707);    _delay_ms(5);
+    11b4:	67 e0       	ldi	r22, 0x07	; 7
+    11b6:	77 e0       	ldi	r23, 0x07	; 7
+    11b8:	80 e3       	ldi	r24, 0x30	; 48
+    11ba:	90 e0       	ldi	r25, 0x00	; 0
+    11bc:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    11c0:	81 ee       	ldi	r24, 0xE1	; 225
+    11c2:	94 e0       	ldi	r25, 0x04	; 4
+    11c4:	01 97       	sbiw	r24, 0x01	; 1
+    11c6:	f1 f7       	brne	.-4      	; 0x11c4 <TFT_init+0x2a0>
+    11c8:	00 c0       	rjmp	.+0      	; 0x11ca <TFT_init+0x2a6>
+    11ca:	00 00       	nop
+		    LCD_Send_SSD1298(0x0031,0x0204);    _delay_ms(5);
+    11cc:	64 e0       	ldi	r22, 0x04	; 4
+    11ce:	72 e0       	ldi	r23, 0x02	; 2
+    11d0:	81 e3       	ldi	r24, 0x31	; 49
+    11d2:	90 e0       	ldi	r25, 0x00	; 0
+    11d4:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    11d8:	81 ee       	ldi	r24, 0xE1	; 225
+    11da:	94 e0       	ldi	r25, 0x04	; 4
+    11dc:	01 97       	sbiw	r24, 0x01	; 1
+    11de:	f1 f7       	brne	.-4      	; 0x11dc <TFT_init+0x2b8>
+    11e0:	00 c0       	rjmp	.+0      	; 0x11e2 <TFT_init+0x2be>
+    11e2:	00 00       	nop
+		    LCD_Send_SSD1298(0x0032,0x0204);    _delay_ms(5);
+    11e4:	64 e0       	ldi	r22, 0x04	; 4
+    11e6:	72 e0       	ldi	r23, 0x02	; 2
+    11e8:	82 e3       	ldi	r24, 0x32	; 50
+    11ea:	90 e0       	ldi	r25, 0x00	; 0
+    11ec:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    11f0:	81 ee       	ldi	r24, 0xE1	; 225
+    11f2:	94 e0       	ldi	r25, 0x04	; 4
+    11f4:	01 97       	sbiw	r24, 0x01	; 1
+    11f6:	f1 f7       	brne	.-4      	; 0x11f4 <TFT_init+0x2d0>
+    11f8:	00 c0       	rjmp	.+0      	; 0x11fa <TFT_init+0x2d6>
+    11fa:	00 00       	nop
+		    LCD_Send_SSD1298(0x0033,0x0502);    _delay_ms(5);
+    11fc:	62 e0       	ldi	r22, 0x02	; 2
+    11fe:	75 e0       	ldi	r23, 0x05	; 5
+    1200:	83 e3       	ldi	r24, 0x33	; 51
+    1202:	90 e0       	ldi	r25, 0x00	; 0
+    1204:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1208:	81 ee       	ldi	r24, 0xE1	; 225
+    120a:	94 e0       	ldi	r25, 0x04	; 4
+    120c:	01 97       	sbiw	r24, 0x01	; 1
+    120e:	f1 f7       	brne	.-4      	; 0x120c <TFT_init+0x2e8>
+    1210:	00 c0       	rjmp	.+0      	; 0x1212 <TFT_init+0x2ee>
+    1212:	00 00       	nop
+		    LCD_Send_SSD1298(0x0034,0x0507);    _delay_ms(5);
+    1214:	67 e0       	ldi	r22, 0x07	; 7
+    1216:	75 e0       	ldi	r23, 0x05	; 5
+    1218:	84 e3       	ldi	r24, 0x34	; 52
+    121a:	90 e0       	ldi	r25, 0x00	; 0
+    121c:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1220:	81 ee       	ldi	r24, 0xE1	; 225
+    1222:	94 e0       	ldi	r25, 0x04	; 4
+    1224:	01 97       	sbiw	r24, 0x01	; 1
+    1226:	f1 f7       	brne	.-4      	; 0x1224 <TFT_init+0x300>
+    1228:	00 c0       	rjmp	.+0      	; 0x122a <TFT_init+0x306>
+    122a:	00 00       	nop
+		    LCD_Send_SSD1298(0x0035,0x0204);    _delay_ms(5);
+    122c:	64 e0       	ldi	r22, 0x04	; 4
+    122e:	72 e0       	ldi	r23, 0x02	; 2
+    1230:	85 e3       	ldi	r24, 0x35	; 53
+    1232:	90 e0       	ldi	r25, 0x00	; 0
+    1234:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1238:	81 ee       	ldi	r24, 0xE1	; 225
+    123a:	94 e0       	ldi	r25, 0x04	; 4
+    123c:	01 97       	sbiw	r24, 0x01	; 1
+    123e:	f1 f7       	brne	.-4      	; 0x123c <TFT_init+0x318>
+    1240:	00 c0       	rjmp	.+0      	; 0x1242 <TFT_init+0x31e>
+    1242:	00 00       	nop
+		    LCD_Send_SSD1298(0x0036,0x0204);    _delay_ms(5);
+    1244:	64 e0       	ldi	r22, 0x04	; 4
+    1246:	72 e0       	ldi	r23, 0x02	; 2
+    1248:	86 e3       	ldi	r24, 0x36	; 54
+    124a:	90 e0       	ldi	r25, 0x00	; 0
+    124c:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1250:	81 ee       	ldi	r24, 0xE1	; 225
+    1252:	94 e0       	ldi	r25, 0x04	; 4
+    1254:	01 97       	sbiw	r24, 0x01	; 1
+    1256:	f1 f7       	brne	.-4      	; 0x1254 <TFT_init+0x330>
+    1258:	00 c0       	rjmp	.+0      	; 0x125a <TFT_init+0x336>
+    125a:	00 00       	nop
+		    LCD_Send_SSD1298(0x0037,0x0502);    _delay_ms(5);
+    125c:	62 e0       	ldi	r22, 0x02	; 2
+    125e:	75 e0       	ldi	r23, 0x05	; 5
+    1260:	87 e3       	ldi	r24, 0x37	; 55
+    1262:	90 e0       	ldi	r25, 0x00	; 0
+    1264:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1268:	81 ee       	ldi	r24, 0xE1	; 225
+    126a:	94 e0       	ldi	r25, 0x04	; 4
+    126c:	01 97       	sbiw	r24, 0x01	; 1
+    126e:	f1 f7       	brne	.-4      	; 0x126c <TFT_init+0x348>
+    1270:	00 c0       	rjmp	.+0      	; 0x1272 <TFT_init+0x34e>
+    1272:	00 00       	nop
+		    LCD_Send_SSD1298(0x003A,0x0302);    _delay_ms(5);
+    1274:	62 e0       	ldi	r22, 0x02	; 2
+    1276:	73 e0       	ldi	r23, 0x03	; 3
+    1278:	8a e3       	ldi	r24, 0x3A	; 58
+    127a:	90 e0       	ldi	r25, 0x00	; 0
+    127c:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1280:	81 ee       	ldi	r24, 0xE1	; 225
+    1282:	94 e0       	ldi	r25, 0x04	; 4
+    1284:	01 97       	sbiw	r24, 0x01	; 1
+    1286:	f1 f7       	brne	.-4      	; 0x1284 <TFT_init+0x360>
+    1288:	00 c0       	rjmp	.+0      	; 0x128a <TFT_init+0x366>
+    128a:	00 00       	nop
+		    LCD_Send_SSD1298(0x003B,0x0302);    _delay_ms(5);
+    128c:	62 e0       	ldi	r22, 0x02	; 2
+    128e:	73 e0       	ldi	r23, 0x03	; 3
+    1290:	8b e3       	ldi	r24, 0x3B	; 59
+    1292:	90 e0       	ldi	r25, 0x00	; 0
+    1294:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    1298:	81 ee       	ldi	r24, 0xE1	; 225
+    129a:	94 e0       	ldi	r25, 0x04	; 4
+    129c:	01 97       	sbiw	r24, 0x01	; 1
+    129e:	f1 f7       	brne	.-4      	; 0x129c <TFT_init+0x378>
+    12a0:	00 c0       	rjmp	.+0      	; 0x12a2 <TFT_init+0x37e>
+    12a2:	00 00       	nop
+		    LCD_Send_SSD1298(0x0023,0x0000);    _delay_ms(5);
+    12a4:	60 e0       	ldi	r22, 0x00	; 0
+    12a6:	70 e0       	ldi	r23, 0x00	; 0
+    12a8:	83 e2       	ldi	r24, 0x23	; 35
+    12aa:	90 e0       	ldi	r25, 0x00	; 0
+    12ac:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    12b0:	81 ee       	ldi	r24, 0xE1	; 225
+    12b2:	94 e0       	ldi	r25, 0x04	; 4
+    12b4:	01 97       	sbiw	r24, 0x01	; 1
+    12b6:	f1 f7       	brne	.-4      	; 0x12b4 <TFT_init+0x390>
+    12b8:	00 c0       	rjmp	.+0      	; 0x12ba <TFT_init+0x396>
+    12ba:	00 00       	nop
+		    LCD_Send_SSD1298(0x0024,0x0000);    _delay_ms(5);
+    12bc:	60 e0       	ldi	r22, 0x00	; 0
+    12be:	70 e0       	ldi	r23, 0x00	; 0
+    12c0:	84 e2       	ldi	r24, 0x24	; 36
+    12c2:	90 e0       	ldi	r25, 0x00	; 0
+    12c4:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    12c8:	81 ee       	ldi	r24, 0xE1	; 225
+    12ca:	94 e0       	ldi	r25, 0x04	; 4
+    12cc:	01 97       	sbiw	r24, 0x01	; 1
+    12ce:	f1 f7       	brne	.-4      	; 0x12cc <TFT_init+0x3a8>
+    12d0:	00 c0       	rjmp	.+0      	; 0x12d2 <TFT_init+0x3ae>
+    12d2:	00 00       	nop
+		    LCD_Send_SSD1298(0x0025,0x8000);    _delay_ms(5);
+    12d4:	60 e0       	ldi	r22, 0x00	; 0
+    12d6:	70 e8       	ldi	r23, 0x80	; 128
+    12d8:	85 e2       	ldi	r24, 0x25	; 37
+    12da:	90 e0       	ldi	r25, 0x00	; 0
+    12dc:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+    12e0:	81 ee       	ldi	r24, 0xE1	; 225
+    12e2:	94 e0       	ldi	r25, 0x04	; 4
+    12e4:	01 97       	sbiw	r24, 0x01	; 1
+    12e6:	f1 f7       	brne	.-4      	; 0x12e4 <TFT_init+0x3c0>
+    12e8:	00 c0       	rjmp	.+0      	; 0x12ea <TFT_init+0x3c6>
+    12ea:	00 00       	nop
+		    LCD_Send_SSD1298(0x004f,0);
+    12ec:	60 e0       	ldi	r22, 0x00	; 0
+    12ee:	70 e0       	ldi	r23, 0x00	; 0
+    12f0:	8f e4       	ldi	r24, 0x4F	; 79
+    12f2:	90 e0       	ldi	r25, 0x00	; 0
+    12f4:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+		    LCD_Send_SSD1298(0x004e,0);
+    12f8:	60 e0       	ldi	r22, 0x00	; 0
+    12fa:	70 e0       	ldi	r23, 0x00	; 0
+    12fc:	8e e4       	ldi	r24, 0x4E	; 78
+    12fe:	90 e0       	ldi	r25, 0x00	; 0
+    1300:	0e 94 35 07 	call	0xe6a	; 0xe6a <LCD_Send_SSD1298>
+		    TFT_write_command(0x0022);
+    1304:	82 e2       	ldi	r24, 0x22	; 34
+    1306:	90 e0       	ldi	r25, 0x00	; 0
+    1308:	0e 94 1e 07 	call	0xe3c	; 0xe3c <TFT_write_command>
+	LCD_STER |= (LCD_CS);
+    130c:	af 9a       	sbi	0x15, 7	; 21
+    130e:	08 95       	ret
+
+00001310 <TFT_char>:
+}
+
+void TFT_char(const uint8_t *font, uint8_t ch,
+              uint16_t x, uint16_t y,
+              uint16_t fg_color, uint16_t bg_color,
+              uint16_t width, uint16_t height) {
+    1310:	2f 92       	push	r2
+    1312:	3f 92       	push	r3
+    1314:	4f 92       	push	r4
+    1316:	5f 92       	push	r5
+    1318:	6f 92       	push	r6
+    131a:	7f 92       	push	r7
+    131c:	8f 92       	push	r8
+    131e:	9f 92       	push	r9
+    1320:	af 92       	push	r10
+    1322:	bf 92       	push	r11
+    1324:	cf 92       	push	r12
+    1326:	df 92       	push	r13
+    1328:	ef 92       	push	r14
+    132a:	ff 92       	push	r15
+    132c:	0f 93       	push	r16
+    132e:	1f 93       	push	r17
+    1330:	cf 93       	push	r28
+    1332:	df 93       	push	r29
+    1334:	00 d0       	rcall	.+0      	; 0x1336 <TFT_char+0x26>
+    1336:	00 d0       	rcall	.+0      	; 0x1338 <TFT_char+0x28>
+    1338:	cd b7       	in	r28, 0x3d	; 61
+    133a:	de b7       	in	r29, 0x3e	; 62
+    133c:	a6 2f       	mov	r26, r22
+    133e:	fa 01       	movw	r30, r20
+    1340:	b9 01       	movw	r22, r18
+  uint16_t j, k;
+  const uint8_t *bmp_addr = font + ((ch - ' ')*height*(width/8));
+    1342:	96 01       	movw	r18, r12
+    1344:	36 95       	lsr	r19
+    1346:	27 95       	ror	r18
+    1348:	36 95       	lsr	r19
+    134a:	27 95       	ror	r18
+    134c:	36 95       	lsr	r19
+    134e:	27 95       	ror	r18
+    1350:	2a 9d       	mul	r18, r10
+    1352:	a0 01       	movw	r20, r0
+    1354:	2b 9d       	mul	r18, r11
+    1356:	50 0d       	add	r21, r0
+    1358:	3a 9d       	mul	r19, r10
+    135a:	50 0d       	add	r21, r0
+    135c:	11 24       	eor	r1, r1
+    135e:	2a 2f       	mov	r18, r26
+    1360:	30 e0       	ldi	r19, 0x00	; 0
+    1362:	20 52       	subi	r18, 0x20	; 32
+    1364:	31 09       	sbc	r19, r1
+    1366:	42 9f       	mul	r20, r18
+    1368:	40 01       	movw	r8, r0
+    136a:	43 9f       	mul	r20, r19
+    136c:	90 0c       	add	r9, r0
+    136e:	52 9f       	mul	r21, r18
+    1370:	90 0c       	add	r9, r0
+    1372:	11 24       	eor	r1, r1
+    1374:	88 0e       	add	r8, r24
+    1376:	99 1e       	adc	r9, r25
+  uint8_t bmp_byte = 0, pixel_mask = 0x80;
+  uint8_t bit_set = 0;
+
+  LCD_STER &= ~(LCD_CS);
+    1378:	af 98       	cbi	0x15, 7	; 21
+  TFT_write_address(x, y, x + width - 1, y + height - 1);
+    137a:	9b 01       	movw	r18, r22
+    137c:	21 50       	subi	r18, 0x01	; 1
+    137e:	31 09       	sbc	r19, r1
+    1380:	2a 0d       	add	r18, r10
+    1382:	3b 1d       	adc	r19, r11
+    1384:	af 01       	movw	r20, r30
+    1386:	41 50       	subi	r20, 0x01	; 1
+    1388:	51 09       	sbc	r21, r1
+    138a:	4c 0d       	add	r20, r12
+    138c:	5d 1d       	adc	r21, r13
+    138e:	cf 01       	movw	r24, r30
+    1390:	0e 94 40 07 	call	0xe80	; 0xe80 <TFT_write_address>
+
+  k = 0;
+  while (height--)
+    1394:	35 01       	movw	r6, r10
+              uint16_t x, uint16_t y,
+              uint16_t fg_color, uint16_t bg_color,
+              uint16_t width, uint16_t height) {
+  uint16_t j, k;
+  const uint8_t *bmp_addr = font + ((ch - ' ')*height*(width/8));
+  uint8_t bmp_byte = 0, pixel_mask = 0x80;
+    1396:	68 94       	set
+    1398:	33 24       	eor	r3, r3
+    139a:	37 f8       	bld	r3, 7
+    139c:	21 2c       	mov	r2, r1
+  uint8_t bit_set = 0;
+
+  LCD_STER &= ~(LCD_CS);
+  TFT_write_address(x, y, x + width - 1, y + height - 1);
+
+  k = 0;
+    139e:	41 2c       	mov	r4, r1
+    13a0:	51 2c       	mov	r5, r1
+  while (height--)
+  {
+    for (j = width; j; --j)
+    13a2:	c9 82       	std	Y+1, r12	; 0x01
+    13a4:	da 82       	std	Y+2, r13	; 0x02
+
+  LCD_STER &= ~(LCD_CS);
+  TFT_write_address(x, y, x + width - 1, y + height - 1);
+
+  k = 0;
+  while (height--)
+    13a6:	28 c0       	rjmp	.+80     	; 0x13f8 <TFT_char+0xe8>
+  {
+    for (j = width; j; --j)
+    {
+      if ((k % 8) == 0) {
+    13a8:	c5 01       	movw	r24, r10
+    13aa:	87 70       	andi	r24, 0x07	; 7
+    13ac:	99 27       	eor	r25, r25
+    13ae:	89 2b       	or	r24, r25
+    13b0:	41 f4       	brne	.+16     	; 0x13c2 <TFT_char+0xb2>
+        bmp_byte = pgm_read_byte(bmp_addr);
+    13b2:	f4 01       	movw	r30, r8
+    13b4:	24 90       	lpm	r2, Z
+        pixel_mask = 0x80;
+        ++bmp_addr;
+    13b6:	ff ef       	ldi	r31, 0xFF	; 255
+    13b8:	8f 1a       	sub	r8, r31
+    13ba:	9f 0a       	sbc	r9, r31
+  {
+    for (j = width; j; --j)
+    {
+      if ((k % 8) == 0) {
+        bmp_byte = pgm_read_byte(bmp_addr);
+        pixel_mask = 0x80;
+    13bc:	68 94       	set
+    13be:	33 24       	eor	r3, r3
+    13c0:	37 f8       	bld	r3, 7
+        ++bmp_addr;
+      }
+
+      bit_set = bmp_byte & pixel_mask;
+    13c2:	83 2d       	mov	r24, r3
+    13c4:	82 21       	and	r24, r2
+
+      pixel_mask >>= 1;
+    13c6:	36 94       	lsr	r3
+      ++k;
+    13c8:	9f ef       	ldi	r25, 0xFF	; 255
+    13ca:	a9 1a       	sub	r10, r25
+    13cc:	b9 0a       	sbc	r11, r25
+
+      if (bit_set) {
+    13ce:	88 23       	and	r24, r24
+    13d0:	21 f0       	breq	.+8      	; 0x13da <TFT_char+0xca>
+        TFT_write_data(fg_color);
+    13d2:	c8 01       	movw	r24, r16
+    13d4:	0e 94 24 07 	call	0xe48	; 0xe48 <TFT_write_data>
+    13d8:	03 c0       	rjmp	.+6      	; 0x13e0 <TFT_char+0xd0>
+      } else {
+        TFT_write_data(bg_color);
+    13da:	c7 01       	movw	r24, r14
+    13dc:	0e 94 24 07 	call	0xe48	; 0xe48 <TFT_write_data>
+  TFT_write_address(x, y, x + width - 1, y + height - 1);
+
+  k = 0;
+  while (height--)
+  {
+    for (j = width; j; --j)
+    13e0:	eb 81       	ldd	r30, Y+3	; 0x03
+    13e2:	fc 81       	ldd	r31, Y+4	; 0x04
+    13e4:	31 97       	sbiw	r30, 0x01	; 1
+    13e6:	fc 83       	std	Y+4, r31	; 0x04
+    13e8:	eb 83       	std	Y+3, r30	; 0x03
+    13ea:	ef 2b       	or	r30, r31
+    13ec:	e9 f6       	brne	.-70     	; 0x13a8 <TFT_char+0x98>
+    13ee:	4c 0c       	add	r4, r12
+    13f0:	5d 1c       	adc	r5, r13
+    13f2:	f1 e0       	ldi	r31, 0x01	; 1
+    13f4:	6f 1a       	sub	r6, r31
+    13f6:	71 08       	sbc	r7, r1
+
+  LCD_STER &= ~(LCD_CS);
+  TFT_write_address(x, y, x + width - 1, y + height - 1);
+
+  k = 0;
+  while (height--)
+    13f8:	61 14       	cp	r6, r1
+    13fa:	71 04       	cpc	r7, r1
+    13fc:	49 f0       	breq	.+18     	; 0x1410 <TFT_char+0x100>
+  {
+    for (j = width; j; --j)
+    13fe:	c1 14       	cp	r12, r1
+    1400:	d1 04       	cpc	r13, r1
+    1402:	b9 f3       	breq	.-18     	; 0x13f2 <TFT_char+0xe2>
+    1404:	52 01       	movw	r10, r4
+    1406:	89 81       	ldd	r24, Y+1	; 0x01
+    1408:	8b 83       	std	Y+3, r24	; 0x03
+    140a:	9a 81       	ldd	r25, Y+2	; 0x02
+    140c:	9c 83       	std	Y+4, r25	; 0x04
+    140e:	cc cf       	rjmp	.-104    	; 0x13a8 <TFT_char+0x98>
+        TFT_write_data(bg_color);
+      }
+    }
+  }
+
+  LCD_STER |= (LCD_CS);
+    1410:	af 9a       	sbi	0x15, 7	; 21
+}
+    1412:	0f 90       	pop	r0
+    1414:	0f 90       	pop	r0
+    1416:	0f 90       	pop	r0
+    1418:	0f 90       	pop	r0
+    141a:	df 91       	pop	r29
+    141c:	cf 91       	pop	r28
+    141e:	1f 91       	pop	r17
+    1420:	0f 91       	pop	r16
+    1422:	ff 90       	pop	r15
+    1424:	ef 90       	pop	r14
+    1426:	df 90       	pop	r13
+    1428:	cf 90       	pop	r12
+    142a:	bf 90       	pop	r11
+    142c:	af 90       	pop	r10
+    142e:	9f 90       	pop	r9
+    1430:	8f 90       	pop	r8
+    1432:	7f 90       	pop	r7
+    1434:	6f 90       	pop	r6
+    1436:	5f 90       	pop	r5
+    1438:	4f 90       	pop	r4
+    143a:	3f 90       	pop	r3
+    143c:	2f 90       	pop	r2
+    143e:	08 95       	ret
+
+00001440 <_exit>:
+    1440:	f8 94       	cli
+
+00001442 <__stop_program>:
+    1442:	ff cf       	rjmp	.-2      	; 0x1442 <__stop_program>

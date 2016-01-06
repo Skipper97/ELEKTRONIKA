@@ -1,0 +1,25 @@
+"$(ProjDirPath)/Project_Settings/Linker_Files/Project.prm"
+-M
+-ViewHidden
+-WmsgFob"%f%e:%l:%k:%d %m\n"
+-WmsgSd1100
+-WmsgSd1912 
+-Add("$(ProjDirPath)/FLASH/Sources/Fat_c.obj"
+"$(ProjDirPath)/FLASH/Sources/FileList_c.obj"
+"$(ProjDirPath)/FLASH/Sources/SD_c.obj"
+"$(ProjDirPath)/FLASH/Sources/SPI_c.obj"
+"$(ProjDirPath)/FLASH/Sources/SSD1289_c.obj"
+"$(ProjDirPath)/FLASH/Sources/ads7843_c.obj"
+"$(ProjDirPath)/FLASH/Sources/console_c.obj"
+"$(ProjDirPath)/FLASH/Sources/fonts_c.obj"
+"$(ProjDirPath)/FLASH/Sources/heap_c.obj"
+"$(ProjDirPath)/FLASH/Sources/init_c.obj"
+"$(ProjDirPath)/FLASH/Sources/interrupt_c.obj"
+"$(ProjDirPath)/FLASH/Sources/main_c.obj"
+"$(ProjDirPath)/FLASH/Sources/sci_c.obj"
+"$(ProjDirPath)/FLASH/Sources/tempo_c.obj"
+"$(ProjDirPath)/FLASH/Sources/text_c.obj"
+"$(ProjDirPath)/FLASH/Sources/tools_c.obj"
+"$(ProjDirPath)/FLASH/Project_Settings/Startup_Code/start08_c.obj"
+"$(ProjDirPath)/FLASH/Lib/mc9s08aw60_c.obj"
+"$(MCUToolsBaseDirEnv)/lib/hc08c/lib/ansifs.lib" )

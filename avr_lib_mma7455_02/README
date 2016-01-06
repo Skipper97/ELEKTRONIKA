@@ -1,0 +1,29 @@
+==================================================
+MMA7455 lib
+==================================================
+= Copyright (c) Davide Gironi, 2012              =
+= http://davidegironi.blogspot.it/               =
+==================================================
+
+
+MMA7455 3-axis Accelerometer AVR Atmega library.
+MMA7455 is a very low power 3 axis digital accelerometer from Freescale
+Semiconductors. It's micro machined nano structure is capable of measuring
+acceleration along its X, Y and Z axes.
+
+User can setup sensitivity to 8bit, or 10bit, and measurement mode to 2/4/8G.
+You should calibrate the sensor before use it, to calibrate it collect values
+placing the accellerometer on every position of an ideal cube and then edit
+calibration offset values.
+
+Setup parameters can be found in file mma7455.h
+
+
+Devel Notes
+-----------
+This library was developed on Eclipse, built with avr-gcc on Atmega8 @ 1MHz.
+
+
+License
+-------
+Please refer to LICENSE file for licensing information.

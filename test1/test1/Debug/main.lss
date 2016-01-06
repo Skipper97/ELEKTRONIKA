@@ -1,0 +1,522 @@
+
+main.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000290  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .comment      00000030  00000000  00000000  000002e4  2**0
+                  CONTENTS, READONLY
+  2 .debug_aranges 000000a8  00000000  00000000  00000314  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_info   00000a20  00000000  00000000  000003bc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_abbrev 0000025e  00000000  00000000  00000ddc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_line   000002c5  00000000  00000000  0000103a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_frame  0000020c  00000000  00000000  00001300  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_str    0000021f  00000000  00000000  0000150c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_loc    00000c48  00000000  00000000  0000172b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_ranges 00000088  00000000  00000000  00002373  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+   8:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+   c:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  10:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  14:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  18:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  1c:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  20:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  24:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  28:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  2c:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  30:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  34:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  38:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  3c:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  40:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  44:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  48:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  4c:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  50:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d4 e0       	ldi	r29, 0x04	; 4
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+
+00000060 <__do_copy_data>:
+  60:	10 e0       	ldi	r17, 0x00	; 0
+  62:	a0 e6       	ldi	r26, 0x60	; 96
+  64:	b0 e0       	ldi	r27, 0x00	; 0
+  66:	e0 e9       	ldi	r30, 0x90	; 144
+  68:	f2 e0       	ldi	r31, 0x02	; 2
+  6a:	02 c0       	rjmp	.+4      	; 0x70 <__do_copy_data+0x10>
+  6c:	05 90       	lpm	r0, Z+
+  6e:	0d 92       	st	X+, r0
+  70:	a0 36       	cpi	r26, 0x60	; 96
+  72:	b1 07       	cpc	r27, r17
+  74:	d9 f7       	brne	.-10     	; 0x6c <__do_copy_data+0xc>
+  76:	0e 94 41 00 	call	0x82	; 0x82 <main>
+  7a:	0c 94 46 01 	jmp	0x28c	; 0x28c <_exit>
+
+0000007e <__bad_interrupt>:
+  7e:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000082 <main>:
+
+
+/* _____PRIVATE FUNCTIONS____________________________________________________ */
+int main(void)
+{
+	MCUCSR |= (1<<JTD);
+  82:	84 b7       	in	r24, 0x34	; 52
+  84:	80 68       	ori	r24, 0x80	; 128
+  86:	84 bf       	out	0x34, r24	; 52
+	MCUCSR |= (1<<JTD);
+  88:	84 b7       	in	r24, 0x34	; 52
+  8a:	80 68       	ori	r24, 0x80	; 128
+  8c:	84 bf       	out	0x34, r24	; 52
+	//	uint16_t color[]={0xf800,0x001f,0xffe0,0x0000,0xffff,0x07ff,0xf81f,0x07e0};
+
+	uint16_t color[]={ WHITE, BLACK, RED, GREEN,BLUE,YELLOW,MAGENTA,CYAN, GRAY, SILVER, GOLD };
+
+
+	LCD_Reset();
+  8e:	0e 94 a7 00 	call	0x14e	; 0x14e <LCD_Reset>
+	LCD_Clear(BLACK);
+  92:	80 e0       	ldi	r24, 0x00	; 0
+  94:	90 e0       	ldi	r25, 0x00	; 0
+  96:	0e 94 36 01 	call	0x26c	; 0x26c <LCD_Clear>
+  9a:	ff cf       	rjmp	.-2      	; 0x9a <main+0x18>
+
+0000009c <LCD_WaitMs>:
+    unsigned int color=0;   
+    unsigned int x1,y1;   
+   
+    // set draw area   
+    LCD_SetArea(x,y,x+w-1,y+h-1);   
+    for (y1 = 0; y1<h ; y1++)   
+  9c:	56 e6       	ldi	r21, 0x66	; 102
+  9e:	46 e0       	ldi	r20, 0x06	; 6
+  a0:	06 c0       	rjmp	.+12     	; 0xae <LCD_WaitMs+0x12>
+  a2:	00 00       	nop
+  a4:	21 50       	subi	r18, 0x01	; 1
+  a6:	31 09       	sbc	r19, r1
+    {   
+        for (x1 = 0; x1<w ; x1++)   
+  a8:	21 15       	cp	r18, r1
+  aa:	31 05       	cpc	r19, r1
+  ac:	d1 f7       	brne	.-12     	; 0xa2 <LCD_WaitMs+0x6>
+  ae:	01 97       	sbiw	r24, 0x01	; 1
+  b0:	18 f0       	brcs	.+6      	; 0xb8 <LCD_WaitMs+0x1c>
+  b2:	25 2f       	mov	r18, r21
+                colorDup--;   
+            }   
+            LCD_WrDat(color);   
+        }   
+    }   
+    LCD_SetArea(0, 0, GetMaxX(), GetMaxY());   
+  b4:	34 2f       	mov	r19, r20
+  b6:	f5 cf       	rjmp	.-22     	; 0xa2 <LCD_WaitMs+0x6>
+  b8:	08 95       	ret
+
+000000ba <LCD_WrCmd>:
+  ba:	df 98       	cbi	0x1b, 7	; 27
+  bc:	dc 98       	cbi	0x1b, 4	; 27
+  be:	88 bb       	out	0x18, r24	; 24
+  c0:	15 ba       	out	0x15, r1	; 21
+  c2:	dd 98       	cbi	0x1b, 5	; 27
+  c4:	dd 9a       	sbi	0x1b, 5	; 27
+  c6:	df 9a       	sbi	0x1b, 7	; 27
+}   
+  c8:	08 95       	ret
+
+000000ca <LCD_WrDat>:
+  ca:	df 98       	cbi	0x1b, 7	; 27
+  cc:	dc 9a       	sbi	0x1b, 4	; 27
+  ce:	88 bb       	out	0x18, r24	; 24
+  d0:	95 bb       	out	0x15, r25	; 21
+  d2:	dd 98       	cbi	0x1b, 5	; 27
+  d4:	dd 9a       	sbi	0x1b, 5	; 27
+  d6:	df 9a       	sbi	0x1b, 7	; 27
+  d8:	08 95       	ret
+
+000000da <LCD_SetReg>:
+  da:	cf 93       	push	r28
+  dc:	df 93       	push	r29
+  de:	eb 01       	movw	r28, r22
+  e0:	0e 94 5d 00 	call	0xba	; 0xba <LCD_WrCmd>
+  e4:	ce 01       	movw	r24, r28
+  e6:	0e 94 65 00 	call	0xca	; 0xca <LCD_WrDat>
+**********************************************************************************************************/   
+void LCD_SetReg(unsigned char index, unsigned int val)   
+{   
+    LCD_WrCmd(index);   
+    LCD_WrDat(val);   
+}   
+  ea:	df 91       	pop	r29
+  ec:	cf 91       	pop	r28
+  ee:	08 95       	ret
+
+000000f0 <LCD_GetReg>:
+**********************************************************************************************************/   
+unsigned int LCD_GetReg(unsigned char index)   
+{   
+    unsigned int ret;   
+   
+    LCD_CLR_CS();   // clear  CS pin to ENABLE LCD    
+  f0:	df 98       	cbi	0x1b, 7	; 27
+   
+    LCD_CLR_RS();   
+  f2:	dc 98       	cbi	0x1b, 4	; 27
+    LCD_SET_DBL = index;   
+  f4:	88 bb       	out	0x18, r24	; 24
+    LCD_SET_DBH = (index >> 8);   
+  f6:	15 ba       	out	0x15, r1	; 21
+    LCD_CLR_WR();   
+  f8:	dd 98       	cbi	0x1b, 5	; 27
+    LCD_SET_WR();   
+  fa:	dd 9a       	sbi	0x1b, 5	; 27
+   
+    LCD_INPUT();                // input mode   
+  fc:	17 ba       	out	0x17, r1	; 23
+  fe:	14 ba       	out	0x14, r1	; 20
+    LCD_CLR_RD();   
+ 100:	de 98       	cbi	0x1b, 6	; 27
+    asm volatile ("nop");   
+ 102:	00 00       	nop
+    ret = LCD_GET_DBH();   
+ 104:	83 b3       	in	r24, 0x13	; 19
+ 106:	90 e0       	ldi	r25, 0x00	; 0
+    ret <<= 8;   
+ 108:	98 2f       	mov	r25, r24
+ 10a:	88 27       	eor	r24, r24
+    ret |= LCD_GET_DBL();   
+ 10c:	36 b3       	in	r19, 0x16	; 22
+    LCD_SET_RD();   
+ 10e:	de 9a       	sbi	0x1b, 6	; 27
+    LCD_SET_CS();   // set CS pin to DISABLE LCD    
+ 110:	df 9a       	sbi	0x1b, 7	; 27
+   
+    LCD_OUTPUT();               // output data   
+ 112:	2f ef       	ldi	r18, 0xFF	; 255
+ 114:	27 bb       	out	0x17, r18	; 23
+ 116:	24 bb       	out	0x14, r18	; 20
+    return ret;    
+}   
+ 118:	83 2b       	or	r24, r19
+ 11a:	08 95       	ret
+
+0000011c <LCD_InitPort>:
+* Returns     : none  
+* Notes       : none  
+**********************************************************************************************************/   
+void LCD_InitPort(void)   
+{   
+    LCD_SET_DBH = 0xFF;   
+ 11c:	8f ef       	ldi	r24, 0xFF	; 255
+ 11e:	85 bb       	out	0x15, r24	; 21
+    LCD_SET_DBL = 0xFF;   
+ 120:	88 bb       	out	0x18, r24	; 24
+    LCD_OUTPUT();   
+ 122:	87 bb       	out	0x17, r24	; 23
+ 124:	84 bb       	out	0x14, r24	; 20
+   
+    // set default   
+    LCD_SET_CS();   
+ 126:	df 9a       	sbi	0x1b, 7	; 27
+    LCD_SET_RS();   
+ 128:	dc 9a       	sbi	0x1b, 4	; 27
+    LCD_SET_WR();   
+ 12a:	dd 9a       	sbi	0x1b, 5	; 27
+    LCD_SET_RD();   
+ 12c:	de 9a       	sbi	0x1b, 6	; 27
+   
+    LCD_CLR_RST();   
+ 12e:	db 98       	cbi	0x1b, 3	; 27
+   
+    // init direction   
+    LCD_DIR_CS(1);   
+ 130:	d7 9a       	sbi	0x1a, 7	; 26
+    LCD_DIR_RS(1);   
+ 132:	d4 9a       	sbi	0x1a, 4	; 26
+    LCD_DIR_WR(1);   
+ 134:	d5 9a       	sbi	0x1a, 5	; 26
+    LCD_DIR_RD(1);   
+ 136:	d6 9a       	sbi	0x1a, 6	; 26
+    LCD_DIR_RST(1);   
+ 138:	d3 9a       	sbi	0x1a, 3	; 26
+   
+    // reset module   
+    LCD_WaitMs(20);   
+ 13a:	84 e1       	ldi	r24, 0x14	; 20
+ 13c:	90 e0       	ldi	r25, 0x00	; 0
+ 13e:	0e 94 4e 00 	call	0x9c	; 0x9c <LCD_WaitMs>
+    LCD_SET_RST();   
+ 142:	db 9a       	sbi	0x1b, 3	; 27
+    LCD_WaitMs(20);   
+ 144:	84 e1       	ldi	r24, 0x14	; 20
+ 146:	90 e0       	ldi	r25, 0x00	; 0
+ 148:	0e 94 4e 00 	call	0x9c	; 0x9c <LCD_WaitMs>
+ 14c:	08 95       	ret
+
+0000014e <LCD_Reset>:
+* Notes       : none  
+**********************************************************************************************************/   
+void LCD_Reset(void)   
+{   
+    unsigned int driver_code;   
+    LCD_InitPort();   
+ 14e:	0e 94 8e 00 	call	0x11c	; 0x11c <LCD_InitPort>
+   
+    driver_code = LCD_GetReg(0x00);   
+ 152:	80 e0       	ldi	r24, 0x00	; 0
+ 154:	0e 94 78 00 	call	0xf0	; 0xf0 <LCD_GetReg>
+    LCD_LO_DDR = 0xFF;   
+ 158:	2f ef       	ldi	r18, 0xFF	; 255
+ 15a:	27 bb       	out	0x17, r18	; 23
+    LCD_HI_DDR = 0xFF;   
+ 15c:	24 bb       	out	0x14, r18	; 20
+   
+    LCD_LO_PORT = driver_code;   
+ 15e:	88 bb       	out	0x18, r24	; 24
+    LCD_HI_PORT = driver_code>>8;   
+ 160:	95 bb       	out	0x15, r25	; 21
+ 162:	ff cf       	rjmp	.-2      	; 0x162 <LCD_Reset+0x14>
+
+00000164 <LCD_SetCursor>:
+* Input       : x,y - pixel coordinates  
+* Return      : none  
+* Note        : set start address change  
+********************************************************************/   
+void LCD_SetCursor(unsigned int x, unsigned int y)   
+{   
+ 164:	cf 93       	push	r28
+ 166:	df 93       	push	r29
+ 168:	eb 01       	movw	r28, r22
+#ifdef Horizontal   
+    LCD_SetReg(0x4E,x); // initial settings for the GDDRAM X address in the address counter (AC).   
+ 16a:	bc 01       	movw	r22, r24
+ 16c:	8e e4       	ldi	r24, 0x4E	; 78
+ 16e:	0e 94 6d 00 	call	0xda	; 0xda <LCD_SetReg>
+    LCD_SetReg(0x4F,y); // initial settings for the GDDRAM Y address in the address counter (AC).   
+ 172:	be 01       	movw	r22, r28
+ 174:	8f e4       	ldi	r24, 0x4F	; 79
+ 176:	0e 94 6d 00 	call	0xda	; 0xda <LCD_SetReg>
+#else   
+    LCD_SetReg(0x4E,y); // initial settings for the GDDRAM X address in the address counter (AC).   
+    LCD_SetReg(0x4F,x); // initial settings for the GDDRAM Y address in the address counter (AC).   
+#endif   
+    LCD_WrCmd(0x22);    
+ 17a:	82 e2       	ldi	r24, 0x22	; 34
+ 17c:	0e 94 5d 00 	call	0xba	; 0xba <LCD_WrCmd>
+}   
+ 180:	df 91       	pop	r29
+ 182:	cf 91       	pop	r28
+ 184:	08 95       	ret
+
+00000186 <LCD_SetArea>:
+* Input       : x1,y1,x2,y2 - pixel coordinates  
+* Return      : none  
+* Note        : Side Effects: paint area change  
+********************************************************************/   
+void LCD_SetArea(unsigned int x1, unsigned int y1, unsigned int x2, unsigned int y2)   
+{   
+ 186:	df 92       	push	r13
+ 188:	ef 92       	push	r14
+ 18a:	ff 92       	push	r15
+ 18c:	0f 93       	push	r16
+ 18e:	1f 93       	push	r17
+ 190:	cf 93       	push	r28
+ 192:	df 93       	push	r29
+ 194:	ec 01       	movw	r28, r24
+ 196:	8b 01       	movw	r16, r22
+ 198:	d4 2e       	mov	r13, r20
+ 19a:	79 01       	movw	r14, r18
+#ifdef Horizontal   
+    LCD_WrCmd(0x44); LCD_WrDat((x2 << 8) | x1);    // Source RAM address window    
+ 19c:	84 e4       	ldi	r24, 0x44	; 68
+ 19e:	0e 94 5d 00 	call	0xba	; 0xba <LCD_WrCmd>
+ 1a2:	80 e0       	ldi	r24, 0x00	; 0
+ 1a4:	90 e0       	ldi	r25, 0x00	; 0
+ 1a6:	9d 2d       	mov	r25, r13
+ 1a8:	8c 2b       	or	r24, r28
+ 1aa:	9d 2b       	or	r25, r29
+ 1ac:	0e 94 65 00 	call	0xca	; 0xca <LCD_WrDat>
+    LCD_WrCmd(0x45); LCD_WrDat(y1);    // Gate RAM address window    
+ 1b0:	85 e4       	ldi	r24, 0x45	; 69
+ 1b2:	0e 94 5d 00 	call	0xba	; 0xba <LCD_WrCmd>
+ 1b6:	c8 01       	movw	r24, r16
+ 1b8:	0e 94 65 00 	call	0xca	; 0xca <LCD_WrDat>
+    LCD_WrCmd(0x46); LCD_WrDat(y2);    // Gate RAM address window    
+ 1bc:	86 e4       	ldi	r24, 0x46	; 70
+ 1be:	0e 94 5d 00 	call	0xba	; 0xba <LCD_WrCmd>
+ 1c2:	c7 01       	movw	r24, r14
+ 1c4:	0e 94 65 00 	call	0xca	; 0xca <LCD_WrDat>
+#else   
+    LCD_WrCmd(0x44); LCD_WrDat((y2 << 8) | y1);    // Source RAM address window    
+    LCD_WrCmd(0x45); LCD_WrDat(x1);    // Gate RAM address window    
+    LCD_WrCmd(0x46); LCD_WrDat(x2);    // Gate RAM address window    
+#endif   
+    LCD_SetCursor(x1, y1);;   
+ 1c8:	b8 01       	movw	r22, r16
+ 1ca:	ce 01       	movw	r24, r28
+ 1cc:	0e 94 b2 00 	call	0x164	; 0x164 <LCD_SetCursor>
+}   
+ 1d0:	df 91       	pop	r29
+ 1d2:	cf 91       	pop	r28
+ 1d4:	1f 91       	pop	r17
+ 1d6:	0f 91       	pop	r16
+ 1d8:	ff 90       	pop	r15
+ 1da:	ef 90       	pop	r14
+ 1dc:	df 90       	pop	r13
+ 1de:	08 95       	ret
+
+000001e0 <LCD_Bar>:
+*  address x = x  
+*  address y = y << 8  
+*  new line y = y + 0x100  
+********************************************************************/   
+void LCD_Bar(unsigned int left, unsigned int top, unsigned int right, unsigned int bottom, unsigned int color)   
+{   
+ 1e0:	6f 92       	push	r6
+ 1e2:	7f 92       	push	r7
+ 1e4:	8f 92       	push	r8
+ 1e6:	9f 92       	push	r9
+ 1e8:	af 92       	push	r10
+ 1ea:	bf 92       	push	r11
+ 1ec:	cf 92       	push	r12
+ 1ee:	df 92       	push	r13
+ 1f0:	ef 92       	push	r14
+ 1f2:	ff 92       	push	r15
+ 1f4:	0f 93       	push	r16
+ 1f6:	1f 93       	push	r17
+ 1f8:	cf 93       	push	r28
+ 1fa:	df 93       	push	r29
+ 1fc:	5c 01       	movw	r10, r24
+ 1fe:	6b 01       	movw	r12, r22
+ 200:	7a 01       	movw	r14, r20
+ 202:	49 01       	movw	r8, r18
+    register unsigned int x,y;   
+   
+    LCD_SetArea(left, top, right, bottom);   
+ 204:	0e 94 c3 00 	call	0x186	; 0x186 <LCD_SetArea>
+    for(y=top; y<=bottom; y++)   
+ 208:	8c 14       	cp	r8, r12
+ 20a:	9d 04       	cpc	r9, r13
+ 20c:	b0 f0       	brcs	.+44     	; 0x23a <LCD_Bar+0x5a>
+    {   
+        for(x=left; x<=right; x++)   
+ 20e:	6a 2c       	mov	r6, r10
+ 210:	7b 2c       	mov	r7, r11
+ 212:	0d c0       	rjmp	.+26     	; 0x22e <LCD_Bar+0x4e>
+        {   
+            LCD_WrDat(color);   
+ 214:	c8 01       	movw	r24, r16
+ 216:	0e 94 65 00 	call	0xca	; 0xca <LCD_WrDat>
+    register unsigned int x,y;   
+   
+    LCD_SetArea(left, top, right, bottom);   
+    for(y=top; y<=bottom; y++)   
+    {   
+        for(x=left; x<=right; x++)   
+ 21a:	21 96       	adiw	r28, 0x01	; 1
+ 21c:	ec 16       	cp	r14, r28
+ 21e:	fd 06       	cpc	r15, r29
+ 220:	c8 f7       	brcc	.-14     	; 0x214 <LCD_Bar+0x34>
+void LCD_Bar(unsigned int left, unsigned int top, unsigned int right, unsigned int bottom, unsigned int color)   
+{   
+    register unsigned int x,y;   
+   
+    LCD_SetArea(left, top, right, bottom);   
+    for(y=top; y<=bottom; y++)   
+ 222:	8f ef       	ldi	r24, 0xFF	; 255
+ 224:	c8 1a       	sub	r12, r24
+ 226:	d8 0a       	sbc	r13, r24
+ 228:	8c 14       	cp	r8, r12
+ 22a:	9d 04       	cpc	r9, r13
+ 22c:	30 f0       	brcs	.+12     	; 0x23a <LCD_Bar+0x5a>
+    {   
+        for(x=left; x<=right; x++)   
+ 22e:	ea 14       	cp	r14, r10
+ 230:	fb 04       	cpc	r15, r11
+ 232:	b8 f3       	brcs	.-18     	; 0x222 <LCD_Bar+0x42>
+ 234:	c6 2d       	mov	r28, r6
+ 236:	d7 2d       	mov	r29, r7
+ 238:	ed cf       	rjmp	.-38     	; 0x214 <LCD_Bar+0x34>
+        {   
+            LCD_WrDat(color);   
+        }   
+    }   
+    LCD_SetArea(0, 0, GetMaxX(), GetMaxY());   
+ 23a:	2f e3       	ldi	r18, 0x3F	; 63
+ 23c:	31 e0       	ldi	r19, 0x01	; 1
+ 23e:	4f ee       	ldi	r20, 0xEF	; 239
+ 240:	50 e0       	ldi	r21, 0x00	; 0
+ 242:	60 e0       	ldi	r22, 0x00	; 0
+ 244:	70 e0       	ldi	r23, 0x00	; 0
+ 246:	80 e0       	ldi	r24, 0x00	; 0
+ 248:	90 e0       	ldi	r25, 0x00	; 0
+ 24a:	0e 94 c3 00 	call	0x186	; 0x186 <LCD_SetArea>
+}   
+ 24e:	df 91       	pop	r29
+ 250:	cf 91       	pop	r28
+ 252:	1f 91       	pop	r17
+ 254:	0f 91       	pop	r16
+ 256:	ff 90       	pop	r15
+ 258:	ef 90       	pop	r14
+ 25a:	df 90       	pop	r13
+ 25c:	cf 90       	pop	r12
+ 25e:	bf 90       	pop	r11
+ 260:	af 90       	pop	r10
+ 262:	9f 90       	pop	r9
+ 264:	8f 90       	pop	r8
+ 266:	7f 90       	pop	r7
+ 268:	6f 90       	pop	r6
+ 26a:	08 95       	ret
+
+0000026c <LCD_Clear>:
+* Input       : color - paint color  
+* Output      : none  
+* Note        : none  
+********************************************************************/   
+void LCD_Clear(unsigned int color)   
+{   
+ 26c:	0f 93       	push	r16
+ 26e:	1f 93       	push	r17
+//  LCD_WrCmd(0x0007);LCD_WrDat(0x0221); // Display Control: display off   
+    LCD_Bar(0, 0, GetMaxX(), GetMaxY(), color);   
+ 270:	8c 01       	movw	r16, r24
+ 272:	2f e3       	ldi	r18, 0x3F	; 63
+ 274:	31 e0       	ldi	r19, 0x01	; 1
+ 276:	4f ee       	ldi	r20, 0xEF	; 239
+ 278:	50 e0       	ldi	r21, 0x00	; 0
+ 27a:	60 e0       	ldi	r22, 0x00	; 0
+ 27c:	70 e0       	ldi	r23, 0x00	; 0
+ 27e:	80 e0       	ldi	r24, 0x00	; 0
+ 280:	90 e0       	ldi	r25, 0x00	; 0
+ 282:	0e 94 f0 00 	call	0x1e0	; 0x1e0 <LCD_Bar>
+//  LCD_WrCmd(0x0007);LCD_WrDat(0x0233); // Display Control: display on   
+}   
+ 286:	1f 91       	pop	r17
+ 288:	0f 91       	pop	r16
+ 28a:	08 95       	ret
+
+0000028c <_exit>:
+ 28c:	f8 94       	cli
+
+0000028e <__stop_program>:
+ 28e:	ff cf       	rjmp	.-2      	; 0x28e <__stop_program>

@@ -1,0 +1,13 @@
+C:\Users\Huub\Documents\usb hid\UsbApp\bin\Debug\UsbApp.exe
+C:\Users\Huub\Documents\usb hid\UsbApp\bin\Debug\UsbApp.pdb
+C:\Users\Huub\Documents\usb hid\UsbApp\bin\Debug\UsbLibrary.dll
+C:\Users\Huub\Documents\usb hid\UsbApp\bin\Debug\UsbLibrary.pdb
+C:\Users\Huub\Documents\usb hid\UsbApp\bin\Debug\UsbLibrary.xml
+C:\Users\Huub\Documents\usb hid\UsbApp\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Huub\Documents\usb hid\UsbApp\obj\Debug\UsbApp.Properties.Resources.resources
+C:\Users\Huub\Documents\usb hid\UsbApp\obj\Debug\UsbApp.Sniffer.resources
+C:\Users\Huub\Documents\usb hid\UsbApp\obj\Debug\UsbApp.csproj.GenerateResource.Cache
+C:\Users\Huub\Documents\usb hid\UsbApp\obj\Debug\UsbApp.exe
+C:\Users\Huub\Documents\usb hid\UsbApp\obj\Debug\UsbApp.pdb
+C:\Users\Huub\Documents\hmsprojects\TFT_LCD\USB C# PROGRAM\SOURCE\obj\Debug\UsbApp.exe
+C:\Users\Huub\Documents\hmsprojects\TFT_LCD\USB C# PROGRAM\SOURCE\obj\Debug\UsbApp.pdb

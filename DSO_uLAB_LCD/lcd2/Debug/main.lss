@@ -1,0 +1,1247 @@
+
+main.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000121a  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .comment      00000030  00000000  00000000  0000126e  2**0
+                  CONTENTS, READONLY
+  2 .debug_aranges 000000a0  00000000  00000000  0000129e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_info   0000145e  00000000  00000000  0000133e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_abbrev 0000030f  00000000  00000000  0000279c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_line   00000410  00000000  00000000  00002aab  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_frame  0000023c  00000000  00000000  00002ebc  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_str    000002cc  00000000  00000000  000030f8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_loc    00000b44  00000000  00000000  000033c4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_ranges 00000080  00000000  00000000  00003f08  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+       0:	0c 94 1a 06 	jmp	0xc34	; 0xc34 <__ctors_end>
+       4:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+       8:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+       c:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      10:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      14:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      18:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      1c:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      20:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      24:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      28:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      2c:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      30:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      34:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      38:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      3c:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      40:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      44:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      48:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      4c:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+      50:	0c 94 24 06 	jmp	0xc48	; 0xc48 <__bad_interrupt>
+
+00000054 <FONT_16x16>:
+	...
+      78:	07 00 0f 80 0f 80 0f 80 0f 80 0f 80 07 00 07 00     ................
+      88:	00 00 00 00 07 00 07 00 07 00 00 00 00 00 0e 38     ...............8
+      98:	0e 38 0e 38 0e 38 06 30 00 00 00 00 00 00 00 00     .8.8.8.0........
+	...
+      b4:	00 00 0c 30 0c 30 0c 30 7f fe 7f fe 0c 30 0c 30     ...0.0.0.....0.0
+      c4:	0c 30 0c 30 7f fe 7f fe 0c 30 0c 30 0c 30 00 00     .0.0.....0.0.0..
+      d4:	00 00 02 40 02 40 0f f8 1f f8 1a 40 1a 40 1f f0     ...@.@.....@.@..
+      e4:	0f f8 02 58 02 58 1f f8 1f f0 02 40 02 40 00 00     ...X.X.....@.@..
+      f4:	00 00 00 00 00 00 0e 10 0e 30 0e 70 00 e0 01 c0     .........0.p....
+     104:	03 80 07 00 0e 70 0c 70 08 70 00 00 00 00 00 00     .....p.p.p......
+     114:	00 00 00 00 0f 00 19 80 19 80 19 80 0f 00 0f 08     ................
+     124:	0f 98 19 f8 18 f0 18 e0 19 f0 0f 98 00 00 00 00     ................
+     134:	00 00 00 00 07 00 07 00 07 00 0e 00 00 00 00 00     ................
+	...
+     158:	00 f0 01 c0 03 80 07 00 0e 00 0e 00 0e 00 0e 00     ................
+     168:	07 00 03 80 01 c0 00 f0 00 00 00 00 00 00 00 00     ................
+     178:	0f 00 03 80 01 c0 00 e0 00 70 00 70 00 70 00 70     .........p.p.p.p
+     188:	00 e0 01 c0 03 80 0f 00 00 00 00 00 00 00 00 00     ................
+     198:	01 80 11 88 09 90 07 e0 07 e0 3f fc 3f fc 07 e0     ..........?.?...
+     1a8:	07 e0 09 90 11 88 01 80 00 00 00 00 00 00 00 00     ................
+     1b8:	00 00 00 00 01 80 01 80 01 80 0f f0 0f f0 01 80     ................
+     1c8:	01 80 01 80 00 00 00 00 00 00 00 00 00 00 00 00     ................
+	...
+     1e8:	00 00 07 00 07 00 07 00 0e 00 00 00 00 00 00 00     ................
+	...
+     200:	00 00 1f f8 1f f8 00 00 00 00 00 00 00 00 00 00     ................
+	...
+     228:	00 00 07 00 07 00 07 00 00 00 00 00 00 00 00 00     ................
+     238:	00 02 00 06 00 0e 00 1c 00 38 00 70 00 e0 01 c0     .........8.p....
+     248:	03 80 07 00 0e 00 1c 00 00 00 00 00 00 00 00 00     ................
+     258:	0f f0 1c 38 1c 78 1c f8 1c f8 1d b8 1d b8 1f 38     ...8.x.........8
+     268:	1f 38 1e 38 1c 38 0f f0 00 00 00 00 00 00 00 00     .8.8.8..........
+     278:	01 80 01 80 03 80 1f 80 1f 80 03 80 03 80 03 80     ................
+     288:	03 80 03 80 03 80 1f f0 00 00 00 00 00 00 00 00     ................
+     298:	0f e0 1c 70 1c 38 00 38 00 70 00 e0 01 c0 03 80     ...p.8.8.p......
+     2a8:	07 00 0e 38 1c 38 1f f8 00 00 00 00 00 00 00 00     ...8.8..........
+     2b8:	0f e0 1c 70 1c 38 00 38 00 70 03 c0 03 c0 00 70     ...p.8.8.p.....p
+     2c8:	00 38 1c 38 1c 70 0f e0 00 00 00 00 00 00 00 00     .8.8.p..........
+     2d8:	00 e0 01 e0 03 e0 06 e0 0c e0 18 e0 1f f8 1f f8     ................
+     2e8:	00 e0 00 e0 00 e0 03 f8 00 00 00 00 00 00 00 00     ................
+     2f8:	1f f8 1c 00 1c 00 1c 00 1c 00 1f e0 1f f0 00 78     ...............x
+     308:	00 38 1c 38 1c 70 0f e0 00 00 00 00 00 00 00 00     .8.8.p..........
+     318:	03 e0 07 00 0e 00 1c 00 1c 00 1f f0 1f f8 1c 38     ...............8
+     328:	1c 38 1c 38 1c 38 0f f0 00 00 00 00 00 00 00 00     .8.8.8..........
+     338:	1f fc 1c 1c 1c 1c 1c 1c 00 1c 00 38 00 70 00 e0     ...........8.p..
+     348:	01 c0 03 80 03 80 03 80 00 00 00 00 00 00 00 00     ................
+     358:	0f f0 1c 38 1c 38 1c 38 1f 38 07 e0 07 e0 1c f8     ...8.8.8.8......
+     368:	1c 38 1c 38 1c 38 0f f0 00 00 00 00 00 00 00 00     .8.8.8..........
+     378:	0f f0 1c 38 1c 38 1c 38 1c 38 1f f8 0f f8 00 38     ...8.8.8.8.....8
+     388:	00 38 00 70 00 e0 07 c0 00 00 00 00 00 00 00 00     .8.p............
+     398:	00 00 00 00 03 80 03 80 03 80 00 00 00 00 03 80     ................
+     3a8:	03 80 03 80 00 00 00 00 00 00 00 00 00 00 00 00     ................
+     3b8:	00 00 00 00 03 80 03 80 03 80 00 00 00 00 03 80     ................
+     3c8:	03 80 03 80 07 00 00 00 00 00 00 00 00 00 00 70     ...............p
+     3d8:	00 e0 01 c0 03 80 07 00 0e 00 1c 00 1c 00 0e 00     ................
+     3e8:	07 00 03 80 01 c0 00 e0 00 70 00 00 00 00 00 00     .........p......
+     3f8:	00 00 00 00 00 00 3f fc 3f fc 00 00 00 00 3f fc     ......?.?.....?.
+     408:	3f fc 00 00 00 00 00 00 00 00 00 00 00 00 1c 00     ?...............
+     418:	0e 00 07 00 03 80 01 c0 00 e0 00 70 00 70 00 e0     ...........p.p..
+     428:	01 c0 03 80 07 00 0e 00 1c 00 00 00 00 00 03 c0     ................
+     438:	0f f0 1e 78 18 38 00 38 00 70 00 e0 01 c0 01 c0     ...x.8.8.p......
+     448:	00 00 00 00 01 c0 01 c0 01 c0 00 00 00 00 0f f8     ................
+     458:	1c 1c 1c 1c 1c 1c 1c 1c 1c fc 1c fc 1c fc 1c fc     ................
+     468:	1c 00 1c 00 1c 00 1f f0 07 f8 00 00 00 00 00 00     ................
+     478:	03 c0 07 e0 0e 70 1c 38 1c 38 1c 38 1c 38 1f f8     .....p.8.8.8.8..
+     488:	1c 38 1c 38 1c 38 1c 38 00 00 00 00 00 00 00 00     .8.8.8.8........
+     498:	1f f0 0e 38 0e 38 0e 38 0e 38 0f f0 0f f0 0e 38     ...8.8.8.8.....8
+     4a8:	0e 38 0e 38 0e 38 1f f0 00 00 00 00 00 00 00 00     .8.8.8..........
+     4b8:	07 f0 0e 38 1c 38 1c 00 1c 00 1c 00 1c 00 1c 00     ...8.8..........
+     4c8:	1c 00 1c 38 0e 38 07 f0 00 00 00 00 00 00 00 00     ...8.8..........
+     4d8:	1f e0 0e 70 0e 38 0e 38 0e 38 0e 38 0e 38 0e 38     ...p.8.8.8.8.8.8
+     4e8:	0e 38 0e 38 0e 70 1f e0 00 00 00 00 00 00 00 00     .8.8.p..........
+     4f8:	1f f8 0e 18 0e 08 0e 00 0e 30 0f f0 0f f0 0e 30     .........0.....0
+     508:	0e 00 0e 08 0e 18 1f f8 00 00 00 00 00 00 00 00     ................
+     518:	1f f8 0e 18 0e 08 0e 00 0e 30 0f f0 0f f0 0e 30     .........0.....0
+     528:	0e 00 0e 00 0e 00 1f 00 00 00 00 00 00 00 00 00     ................
+     538:	07 f0 0e 38 1c 38 1c 38 1c 00 1c 00 1c 00 1c f8     ...8.8.8........
+     548:	1c 38 1c 38 0e 38 07 f8 00 00 00 00 00 00 00 00     .8.8.8..........
+     558:	1c 70 1c 70 1c 70 1c 70 1c 70 1f f0 1f f0 1c 70     .p.p.p.p.p.....p
+     568:	1c 70 1c 70 1c 70 1c 70 00 00 00 00 00 00 00 00     .p.p.p.p........
+     578:	0f e0 03 80 03 80 03 80 03 80 03 80 03 80 03 80     ................
+     588:	03 80 03 80 03 80 0f e0 00 00 00 00 00 00 00 00     ................
+     598:	01 fc 00 70 00 70 00 70 00 70 00 70 00 70 38 70     ...p.p.p.p.p.p8p
+     5a8:	38 70 38 70 38 70 0f e0 00 00 00 00 00 00 00 00     8p8p8p..........
+     5b8:	1e 38 0e 38 0e 70 0e e0 0f c0 0f 80 0f 80 0f c0     .8.8.p..........
+     5c8:	0e e0 0e 70 0e 38 1e 38 00 00 00 00 00 00 00 00     ...p.8.8........
+     5d8:	1f 00 0e 00 0e 00 0e 00 0e 00 0e 00 0e 00 0e 00     ................
+     5e8:	0e 08 0e 18 0e 38 1f f8 00 00 00 00 00 00 00 00     .....8..........
+     5f8:	1c 1c 1e 3c 1f 7c 1f fc 1f fc 1d dc 1c 9c 1c 1c     ...<.|..........
+     608:	1c 1c 1c 1c 1c 1c 1c 1c 00 00 00 00 00 00 00 00     ................
+     618:	1c 1c 1c 1c 1e 1c 1f 1c 1f 9c 1d dc 1c fc 1c 7c     ...............|
+     628:	1c 3c 1c 1c 1c 1c 1c 1c 00 00 00 00 00 00 00 00     .<..............
+     638:	03 e0 07 f0 0e 38 1c 1c 1c 1c 1c 1c 1c 1c 1c 1c     .....8..........
+     648:	1c 1c 0e 38 07 f0 03 e0 00 00 00 00 00 00 00 00     ...8............
+     658:	1f f0 0e 38 0e 38 0e 38 0e 38 0f f0 0f f0 0e 00     ...8.8.8.8......
+     668:	0e 00 0e 00 0e 00 1f 00 00 00 00 00 00 00 00 00     ................
+     678:	03 e0 0f 78 0e 38 1c 1c 1c 1c 1c 1c 1c 1c 1c 7c     ...x.8.........|
+     688:	1c fc 0f f8 0f f8 00 38 00 fc 00 00 00 00 00 00     .......8........
+     698:	1f f0 0e 38 0e 38 0e 38 0e 38 0f f0 0f f0 0e 70     ...8.8.8.8.....p
+     6a8:	0e 38 0e 38 0e 38 1e 38 00 00 00 00 00 00 00 00     .8.8.8.8........
+     6b8:	0f f0 1c 38 1c 38 1c 38 1c 00 0f e0 07 f0 00 38     ...8.8.8.......8
+     6c8:	1c 38 1c 38 1c 38 0f f0 00 00 00 00 00 00 00 00     .8.8.8..........
+     6d8:	1f fc 19 cc 11 c4 01 c0 01 c0 01 c0 01 c0 01 c0     ................
+     6e8:	01 c0 01 c0 01 c0 07 f0 00 00 00 00 00 00 00 00     ................
+     6f8:	1c 70 1c 70 1c 70 1c 70 1c 70 1c 70 1c 70 1c 70     .p.p.p.p.p.p.p.p
+     708:	1c 70 1c 70 1c 70 0f e0 00 00 00 00 00 00 00 00     .p.p.p..........
+     718:	1c 70 1c 70 1c 70 1c 70 1c 70 1c 70 1c 70 1c 70     .p.p.p.p.p.p.p.p
+     728:	1c 70 0e e0 07 c0 03 80 00 00 00 00 00 00 00 00     .p..............
+     738:	1c 1c 1c 1c 1c 1c 1c 1c 1c 1c 1c 9c 1c 9c 1c 9c     ................
+     748:	0f f8 0f f8 07 70 07 70 00 00 00 00 00 00 00 00     .....p.p........
+     758:	1c 70 1c 70 1c 70 0e e0 07 c0 03 80 03 80 07 c0     .p.p.p..........
+     768:	0e e0 1c 70 1c 70 1c 70 00 00 00 00 00 00 00 00     ...p.p.p........
+     778:	1c 70 1c 70 1c 70 1c 70 1c 70 0e e0 07 c0 03 80     .p.p.p.p.p......
+     788:	03 80 03 80 03 80 0f e0 00 00 00 00 00 00 00 00     ................
+     798:	1f f8 1c 38 18 38 10 70 00 e0 01 c0 03 80 07 00     ...8.8.p........
+     7a8:	0e 08 1c 18 1c 38 1f f8 00 00 00 00 00 00 00 00     .....8..........
+     7b8:	07 f0 07 00 07 00 07 00 07 00 07 00 07 00 07 00     ................
+     7c8:	07 00 07 00 07 00 07 f0 00 00 00 00 00 00 00 00     ................
+     7d8:	10 00 18 00 1c 00 0e 00 07 00 03 80 01 c0 00 e0     ................
+     7e8:	00 70 00 38 00 1c 00 07 00 00 00 00 00 00 00 00     .p.8............
+     7f8:	07 f0 00 70 00 70 00 70 00 70 00 70 00 70 00 70     ...p.p.p.p.p.p.p
+     808:	00 70 00 70 00 70 07 f0 00 00 00 00 00 00 01 80     .p.p.p..........
+     818:	03 c0 07 e0 0e 70 1c 38 00 00 00 00 00 00 00 00     .....p.8........
+	...
+     850:	7f ff 7f ff 00 00 00 00 1c 00 1c 00 07 00 07 00     ................
+	...
+     880:	0f e0 00 70 00 70 0f f0 1c 70 1c 70 1c 70 0f d8     ...p.p...p.p.p..
+	...
+     898:	1e 00 0e 00 0e 00 0e 00 0f f0 0e 38 0e 38 0e 38     ...........8.8.8
+     8a8:	0e 38 0e 38 0e 38 1b f0 00 00 00 00 00 00 00 00     .8.8.8..........
+	...
+     8c0:	0f e0 1c 70 1c 70 1c 00 1c 00 1c 70 1c 70 0f e0     ...p.p.....p.p..
+	...
+     8d8:	00 f8 00 70 00 70 00 70 0f f0 1c 70 1c 70 1c 70     ...p.p.p...p.p.p
+     8e8:	1c 70 1c 70 1c 70 0f d8 00 00 00 00 00 00 00 00     .p.p.p..........
+	...
+     900:	0f e0 1c 70 1c 70 1f f0 1c 00 1c 70 1c 70 0f e0     ...p.p.....p.p..
+	...
+     918:	03 e0 07 70 07 70 07 00 07 00 1f e0 1f e0 07 00     ...p.p..........
+     928:	07 00 07 00 07 00 1f c0 00 00 00 00 00 00 00 00     ................
+	...
+     940:	0f d8 1c 70 1c 70 1c 70 1c 70 0f f0 07 f0 00 70     ...p.p.p.p.....p
+     950:	1c 70 0f e0 00 00 00 00 1e 00 0e 00 0e 00 0e 00     .p..............
+     960:	0e f0 0f 38 0f 38 0e 38 0e 38 0e 38 0e 38 1e 38     ...8.8.8.8.8.8.8
+	...
+     978:	01 c0 01 c0 01 c0 00 00 0f c0 01 c0 01 c0 01 c0     ................
+     988:	01 c0 01 c0 01 c0 0f f8 00 00 00 00 00 00 00 00     ................
+     998:	00 70 00 70 00 70 00 00 03 f0 00 70 00 70 00 70     .p.p.p.....p.p.p
+     9a8:	00 70 00 70 00 70 1c 70 0c f0 07 e0 00 00 00 00     .p.p.p.p........
+     9b8:	1e 00 0e 00 0e 00 0e 00 0e 38 0e 70 0e e0 0f c0     .........8.p....
+     9c8:	0e e0 0e 70 0e 38 1e 38 00 00 00 00 00 00 00 00     ...p.8.8........
+     9d8:	0f c0 01 c0 01 c0 01 c0 01 c0 01 c0 01 c0 01 c0     ................
+     9e8:	01 c0 01 c0 01 c0 0f f8 00 00 00 00 00 00 00 00     ................
+	...
+     a00:	1f f8 1c 9c 1c 9c 1c 9c 1c 9c 1c 9c 1c 9c 1c 9c     ................
+	...
+     a20:	1f e0 1c 70 1c 70 1c 70 1c 70 1c 70 1c 70 1c 70     ...p.p.p.p.p.p.p
+	...
+     a40:	0f e0 1c 70 1c 70 1c 70 1c 70 1c 70 1c 70 0f e0     ...p.p.p.p.p.p..
+	...
+     a60:	1b f0 0e 38 0e 38 0e 38 0e 38 0e 38 0f f0 0e 00     ...8.8.8.8.8....
+     a70:	0e 00 1f 00 00 00 00 00 00 00 00 00 00 00 00 00     ................
+     a80:	1f b0 38 e0 38 e0 38 e0 38 e0 38 e0 1f e0 00 e0     ..8.8.8.8.8.....
+     a90:	00 e0 01 f0 00 00 00 00 00 00 00 00 00 00 00 00     ................
+     aa0:	1e f0 0f f8 0f 38 0e 00 0e 00 0e 00 0e 00 1f 00     .....8..........
+	...
+     ac0:	0f e0 1c 30 1c 30 0f 80 03 e0 18 70 18 70 0f e0     ...0.0.....p.p..
+	...
+     ad8:	00 00 01 00 03 00 07 00 1f f0 07 00 07 00 07 00     ................
+     ae8:	07 00 07 70 07 70 03 e0 00 00 00 00 00 00 00 00     ...p.p..........
+	...
+     b00:	1c 70 1c 70 1c 70 1c 70 1c 70 1c 70 1c 70 0f d8     .p.p.p.p.p.p.p..
+	...
+     b20:	1c 70 1c 70 1c 70 1c 70 1c 70 0e e0 07 c0 03 80     .p.p.p.p.p......
+	...
+     b40:	1c 1c 1c 1c 1c 1c 1c 9c 1c 9c 0f f8 07 70 07 70     .............p.p
+	...
+     b60:	1c e0 1c e0 0f c0 07 80 07 80 0f c0 1c e0 1c e0     ................
+	...
+     b80:	0e 38 0e 38 0e 38 0e 38 0e 38 07 f0 03 e0 00 e0     .8.8.8.8.8......
+     b90:	01 c0 1f 80 00 00 00 00 00 00 00 00 00 00 00 00     ................
+     ba0:	1f e0 18 e0 11 c0 03 80 07 00 0e 20 1c 60 1f e0     ........... .`..
+	...
+     bb8:	01 f8 03 80 03 80 03 80 07 00 1c 00 1c 00 07 00     ................
+     bc8:	03 80 03 80 03 80 01 f8 00 00 00 00 00 00 01 c0     ................
+     bd8:	01 c0 01 c0 01 c0 01 c0 01 c0 01 c0 01 c0 01 c0     ................
+     be8:	01 c0 01 c0 01 c0 01 c0 01 c0 00 00 00 00 00 00     ................
+     bf8:	1f 80 01 c0 01 c0 01 c0 00 e0 00 38 00 38 00 e0     ...........8.8..
+     c08:	01 c0 01 c0 01 c0 1f 80 00 00 00 00 00 00 00 00     ................
+     c18:	1f 1c 3b 9c 39 dc 38 f8 00 00 00 00 00 00 00 00     ..;.9.8.........
+	...
+
+00000c34 <__ctors_end>:
+     c34:	11 24       	eor	r1, r1
+     c36:	1f be       	out	0x3f, r1	; 63
+     c38:	cf e5       	ldi	r28, 0x5F	; 95
+     c3a:	d4 e0       	ldi	r29, 0x04	; 4
+     c3c:	de bf       	out	0x3e, r29	; 62
+     c3e:	cd bf       	out	0x3d, r28	; 61
+     c40:	0e 94 26 06 	call	0xc4c	; 0xc4c <main>
+     c44:	0c 94 0b 09 	jmp	0x1216	; 0x1216 <_exit>
+
+00000c48 <__bad_interrupt>:
+     c48:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000c4c <main>:
+  configure_as_output(TFT_CS);
+  configure_as_output(TFT_RD);
+  configure_as_output(TFT_RST); */
+
+  //DDRD = _BV(SHIFT_DATA) | _BV(SHIFT_LATCH) | _BV(SHIFT_CLOCK);
+  DDRB = _BV(TFT_RS) | _BV(TFT_WR) | _BV(TFT_RD) | _BV(TFT_CS) | _BV(TFT_RST);
+     c4c:	88 ef       	ldi	r24, 0xF8	; 248
+     c4e:	87 bb       	out	0x17, r24	; 23
+  //DDRC = 0 | _BV(TOUCH_IN) | _BV(TOUCH_CLK);
+
+
+  PORTD = 0;
+     c50:	12 ba       	out	0x12, r1	; 18
+  PORTC = 0;
+     c52:	15 ba       	out	0x15, r1	; 21
+  PORTB = 0;
+     c54:	18 ba       	out	0x18, r1	; 24
+
+  TFT_init();
+     c56:	0e 94 66 07 	call	0xecc	; 0xecc <TFT_init>
+
+ // touch_init();
+
+  TFT_fill(0xFFFF);
+     c5a:	8f ef       	ldi	r24, 0xFF	; 255
+     c5c:	9f ef       	ldi	r25, 0xFF	; 255
+     c5e:	0e 94 c8 06 	call	0xd90	; 0xd90 <TFT_fill>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+     c62:	2f e7       	ldi	r18, 0x7F	; 127
+     c64:	8a e1       	ldi	r24, 0x1A	; 26
+     c66:	96 e0       	ldi	r25, 0x06	; 6
+     c68:	21 50       	subi	r18, 0x01	; 1
+     c6a:	80 40       	sbci	r24, 0x00	; 0
+     c6c:	90 40       	sbci	r25, 0x00	; 0
+     c6e:	e1 f7       	brne	.-8      	; 0xc68 <main+0x1c>
+     c70:	00 c0       	rjmp	.+0      	; 0xc72 <main+0x26>
+     c72:	00 00       	nop
+  _delay_ms(2000);
+
+  TFT_box_outline(2,2,92,24,2,0);
+     c74:	e1 2c       	mov	r14, r1
+     c76:	f1 2c       	mov	r15, r1
+     c78:	02 e0       	ldi	r16, 0x02	; 2
+     c7a:	10 e0       	ldi	r17, 0x00	; 0
+     c7c:	28 e1       	ldi	r18, 0x18	; 24
+     c7e:	30 e0       	ldi	r19, 0x00	; 0
+     c80:	4c e5       	ldi	r20, 0x5C	; 92
+     c82:	50 e0       	ldi	r21, 0x00	; 0
+     c84:	62 e0       	ldi	r22, 0x02	; 2
+     c86:	70 e0       	ldi	r23, 0x00	; 0
+     c88:	82 e0       	ldi	r24, 0x02	; 2
+     c8a:	90 e0       	ldi	r25, 0x00	; 0
+     c8c:	0e 94 1d 07 	call	0xe3a	; 0xe3a <TFT_box_outline>
+
+  TFT_char(FONT_16x16, 'C', 5, 5, 0, 0xFFFF, 16, 16);
+     c90:	68 94       	set
+     c92:	aa 24       	eor	r10, r10
+     c94:	a4 f8       	bld	r10, 4
+     c96:	b1 2c       	mov	r11, r1
+     c98:	68 94       	set
+     c9a:	cc 24       	eor	r12, r12
+     c9c:	c4 f8       	bld	r12, 4
+     c9e:	d1 2c       	mov	r13, r1
+     ca0:	ee 24       	eor	r14, r14
+     ca2:	ea 94       	dec	r14
+     ca4:	fe 2c       	mov	r15, r14
+     ca6:	00 e0       	ldi	r16, 0x00	; 0
+     ca8:	10 e0       	ldi	r17, 0x00	; 0
+     caa:	25 e0       	ldi	r18, 0x05	; 5
+     cac:	30 e0       	ldi	r19, 0x00	; 0
+     cae:	45 e0       	ldi	r20, 0x05	; 5
+     cb0:	50 e0       	ldi	r21, 0x00	; 0
+     cb2:	63 e4       	ldi	r22, 0x43	; 67
+     cb4:	84 e5       	ldi	r24, 0x54	; 84
+     cb6:	90 e0       	ldi	r25, 0x00	; 0
+     cb8:	0e 94 73 08 	call	0x10e6	; 0x10e6 <TFT_char>
+  TFT_char(FONT_16x16, 'l', 22, 5, 0, 0xFFFF, 16, 16);
+     cbc:	25 e0       	ldi	r18, 0x05	; 5
+     cbe:	30 e0       	ldi	r19, 0x00	; 0
+     cc0:	46 e1       	ldi	r20, 0x16	; 22
+     cc2:	50 e0       	ldi	r21, 0x00	; 0
+     cc4:	6c e6       	ldi	r22, 0x6C	; 108
+     cc6:	84 e5       	ldi	r24, 0x54	; 84
+     cc8:	90 e0       	ldi	r25, 0x00	; 0
+     cca:	0e 94 73 08 	call	0x10e6	; 0x10e6 <TFT_char>
+  TFT_char(FONT_16x16, 'e', 39, 5, 0, 0xFFFF, 16, 16);
+     cce:	25 e0       	ldi	r18, 0x05	; 5
+     cd0:	30 e0       	ldi	r19, 0x00	; 0
+     cd2:	47 e2       	ldi	r20, 0x27	; 39
+     cd4:	50 e0       	ldi	r21, 0x00	; 0
+     cd6:	65 e6       	ldi	r22, 0x65	; 101
+     cd8:	84 e5       	ldi	r24, 0x54	; 84
+     cda:	90 e0       	ldi	r25, 0x00	; 0
+     cdc:	0e 94 73 08 	call	0x10e6	; 0x10e6 <TFT_char>
+  TFT_char(FONT_16x16, 'a', 56, 5, 0, 0xFFFF, 16, 16);
+     ce0:	25 e0       	ldi	r18, 0x05	; 5
+     ce2:	30 e0       	ldi	r19, 0x00	; 0
+     ce4:	48 e3       	ldi	r20, 0x38	; 56
+     ce6:	50 e0       	ldi	r21, 0x00	; 0
+     ce8:	61 e6       	ldi	r22, 0x61	; 97
+     cea:	84 e5       	ldi	r24, 0x54	; 84
+     cec:	90 e0       	ldi	r25, 0x00	; 0
+     cee:	0e 94 73 08 	call	0x10e6	; 0x10e6 <TFT_char>
+  TFT_char(FONT_16x16, 'r', 73, 5, 0, 0xFFFF, 16, 16);
+     cf2:	25 e0       	ldi	r18, 0x05	; 5
+     cf4:	30 e0       	ldi	r19, 0x00	; 0
+     cf6:	49 e4       	ldi	r20, 0x49	; 73
+     cf8:	50 e0       	ldi	r21, 0x00	; 0
+     cfa:	62 e7       	ldi	r22, 0x72	; 114
+     cfc:	84 e5       	ldi	r24, 0x54	; 84
+     cfe:	90 e0       	ldi	r25, 0x00	; 0
+     d00:	0e 94 73 08 	call	0x10e6	; 0x10e6 <TFT_char>
+     d04:	ff cf       	rjmp	.-2      	; 0xd04 <main+0xb8>
+
+00000d06 <TFT_write_command>:
+/* Implementation of SSD1289 TFT LCD library from TFT.h */
+
+#include "TFT.h"
+
+void TFT_write_command(uint16_t command) {
+  PORTB &= ~(_BV(TFT_RS));
+     d06:	c4 98       	cbi	0x18, 4	; 24
+
+  //shift_out(command);
+
+  PORTB &= ~(_BV(TFT_WR));
+     d08:	c5 98       	cbi	0x18, 5	; 24
+  PORTB |= _BV(TFT_WR);
+     d0a:	c5 9a       	sbi	0x18, 5	; 24
+     d0c:	08 95       	ret
+
+00000d0e <TFT_write_data>:
+}
+
+void TFT_write_data(uint16_t data) {
+  PORTB |= _BV(TFT_RS);
+     d0e:	c4 9a       	sbi	0x18, 4	; 24
+
+  //shift_out(data);
+
+  PORTB &= ~(_BV(TFT_WR));
+     d10:	c5 98       	cbi	0x18, 5	; 24
+  PORTB |= _BV(TFT_WR);
+     d12:	c5 9a       	sbi	0x18, 5	; 24
+     d14:	08 95       	ret
+
+00000d16 <TFT_write_command_data>:
+}
+
+void TFT_write_command_data(uint16_t command, uint16_t data) {
+     d16:	cf 93       	push	r28
+     d18:	df 93       	push	r29
+     d1a:	eb 01       	movw	r28, r22
+  TFT_write_command(command);
+     d1c:	0e 94 83 06 	call	0xd06	; 0xd06 <TFT_write_command>
+  TFT_write_data(data);
+     d20:	ce 01       	movw	r24, r28
+     d22:	0e 94 87 06 	call	0xd0e	; 0xd0e <TFT_write_data>
+}
+     d26:	df 91       	pop	r29
+     d28:	cf 91       	pop	r28
+     d2a:	08 95       	ret
+
+00000d2c <TFT_write_address>:
+
+void TFT_write_address(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2) {
+     d2c:	ef 92       	push	r14
+     d2e:	ff 92       	push	r15
+     d30:	0f 93       	push	r16
+     d32:	1f 93       	push	r17
+     d34:	cf 93       	push	r28
+     d36:	df 93       	push	r29
+     d38:	8c 01       	movw	r16, r24
+     d3a:	eb 01       	movw	r28, r22
+     d3c:	79 01       	movw	r14, r18
+  TFT_write_command_data(0x0044, (x2 << 8) + x1);
+     d3e:	e0 e0       	ldi	r30, 0x00	; 0
+     d40:	f0 e0       	ldi	r31, 0x00	; 0
+     d42:	f4 2f       	mov	r31, r20
+     d44:	bf 01       	movw	r22, r30
+     d46:	68 0f       	add	r22, r24
+     d48:	79 1f       	adc	r23, r25
+     d4a:	84 e4       	ldi	r24, 0x44	; 68
+     d4c:	90 e0       	ldi	r25, 0x00	; 0
+     d4e:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0045, y1);
+     d52:	be 01       	movw	r22, r28
+     d54:	85 e4       	ldi	r24, 0x45	; 69
+     d56:	90 e0       	ldi	r25, 0x00	; 0
+     d58:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0046, y2);
+     d5c:	b7 01       	movw	r22, r14
+     d5e:	86 e4       	ldi	r24, 0x46	; 70
+     d60:	90 e0       	ldi	r25, 0x00	; 0
+     d62:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x004e, x1);
+     d66:	b8 01       	movw	r22, r16
+     d68:	8e e4       	ldi	r24, 0x4E	; 78
+     d6a:	90 e0       	ldi	r25, 0x00	; 0
+     d6c:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x004f, y1);
+     d70:	be 01       	movw	r22, r28
+     d72:	8f e4       	ldi	r24, 0x4F	; 79
+     d74:	90 e0       	ldi	r25, 0x00	; 0
+     d76:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command(0x0022);
+     d7a:	82 e2       	ldi	r24, 0x22	; 34
+     d7c:	90 e0       	ldi	r25, 0x00	; 0
+     d7e:	0e 94 83 06 	call	0xd06	; 0xd06 <TFT_write_command>
+}
+     d82:	df 91       	pop	r29
+     d84:	cf 91       	pop	r28
+     d86:	1f 91       	pop	r17
+     d88:	0f 91       	pop	r16
+     d8a:	ff 90       	pop	r15
+     d8c:	ef 90       	pop	r14
+     d8e:	08 95       	ret
+
+00000d90 <TFT_fill>:
+
+void TFT_fill(uint16_t color) {
+     d90:	cf 93       	push	r28
+     d92:	df 93       	push	r29
+     d94:	ec 01       	movw	r28, r24
+  uint32_t i;
+  PORTB &= ~(_BV(TFT_CS));
+     d96:	c7 98       	cbi	0x18, 7	; 24
+  TFT_write_address(0,0,239,319);
+     d98:	2f e3       	ldi	r18, 0x3F	; 63
+     d9a:	31 e0       	ldi	r19, 0x01	; 1
+     d9c:	4f ee       	ldi	r20, 0xEF	; 239
+     d9e:	50 e0       	ldi	r21, 0x00	; 0
+     da0:	60 e0       	ldi	r22, 0x00	; 0
+     da2:	70 e0       	ldi	r23, 0x00	; 0
+     da4:	80 e0       	ldi	r24, 0x00	; 0
+     da6:	90 e0       	ldi	r25, 0x00	; 0
+     da8:	0e 94 96 06 	call	0xd2c	; 0xd2c <TFT_write_address>
+  TFT_write_data(color);
+     dac:	ce 01       	movw	r24, r28
+     dae:	0e 94 87 06 	call	0xd0e	; 0xd0e <TFT_write_data>
+     db2:	80 e0       	ldi	r24, 0x00	; 0
+     db4:	90 e0       	ldi	r25, 0x00	; 0
+
+  for(i = 0; i <= 0x9600; i++)
+  {
+    PORTB &= ~(_BV(TFT_WR));
+     db6:	c5 98       	cbi	0x18, 5	; 24
+    PORTB |= _BV(TFT_WR);
+     db8:	c5 9a       	sbi	0x18, 5	; 24
+    PORTB &= ~(_BV(TFT_WR));
+     dba:	c5 98       	cbi	0x18, 5	; 24
+    PORTB |= _BV(TFT_WR);
+     dbc:	c5 9a       	sbi	0x18, 5	; 24
+     dbe:	01 96       	adiw	r24, 0x01	; 1
+  uint32_t i;
+  PORTB &= ~(_BV(TFT_CS));
+  TFT_write_address(0,0,239,319);
+  TFT_write_data(color);
+
+  for(i = 0; i <= 0x9600; i++)
+     dc0:	81 30       	cpi	r24, 0x01	; 1
+     dc2:	26 e9       	ldi	r18, 0x96	; 150
+     dc4:	92 07       	cpc	r25, r18
+     dc6:	b9 f7       	brne	.-18     	; 0xdb6 <TFT_fill+0x26>
+    PORTB |= _BV(TFT_WR);
+    PORTB &= ~(_BV(TFT_WR));
+    PORTB |= _BV(TFT_WR);
+  }
+
+  PORTB |= _BV(TFT_CS);
+     dc8:	c7 9a       	sbi	0x18, 7	; 24
+}
+     dca:	df 91       	pop	r29
+     dcc:	cf 91       	pop	r28
+     dce:	08 95       	ret
+
+00000dd0 <TFT_draw_box>:
+
+void TFT_draw_box(uint16_t x1, uint16_t y1, uint16_t x2,
+                  uint16_t y2, uint16_t color) {
+     dd0:	cf 92       	push	r12
+     dd2:	df 92       	push	r13
+     dd4:	ef 92       	push	r14
+     dd6:	ff 92       	push	r15
+     dd8:	0f 93       	push	r16
+     dda:	1f 93       	push	r17
+     ddc:	cf 93       	push	r28
+     dde:	df 93       	push	r29
+     de0:	eb 01       	movw	r28, r22
+     de2:	79 01       	movw	r14, r18
+  uint16_t dx = x2 - x1 + 2, j;
+     de4:	6a 01       	movw	r12, r20
+     de6:	c8 1a       	sub	r12, r24
+     de8:	d9 0a       	sbc	r13, r25
+  PORTB &= ~(_BV(TFT_CS));
+     dea:	c7 98       	cbi	0x18, 7	; 24
+  TFT_write_address(x1, y1, x2, y2);
+     dec:	0e 94 96 06 	call	0xd2c	; 0xd2c <TFT_write_address>
+  TFT_write_data(color);
+     df0:	c8 01       	movw	r24, r16
+     df2:	0e 94 87 06 	call	0xd0e	; 0xd0e <TFT_write_data>
+
+  y2 = (y2 - y1) + 2;
+     df6:	97 01       	movw	r18, r14
+     df8:	2e 5f       	subi	r18, 0xFE	; 254
+     dfa:	3f 4f       	sbci	r19, 0xFF	; 255
+     dfc:	2c 1b       	sub	r18, r28
+     dfe:	3d 0b       	sbc	r19, r29
+  while (--y2) {
+    j = dx;
+    while (--j) {
+     e00:	a6 01       	movw	r20, r12
+     e02:	4f 5f       	subi	r20, 0xFF	; 255
+     e04:	5f 4f       	sbci	r21, 0xFF	; 255
+  PORTB &= ~(_BV(TFT_CS));
+  TFT_write_address(x1, y1, x2, y2);
+  TFT_write_data(color);
+
+  y2 = (y2 - y1) + 2;
+  while (--y2) {
+     e06:	05 c0       	rjmp	.+10     	; 0xe12 <TFT_draw_box+0x42>
+    j = dx;
+    while (--j) {
+      PORTB &= ~(_BV(TFT_WR));
+     e08:	c5 98       	cbi	0x18, 5	; 24
+      PORTB |= _BV(TFT_WR);
+     e0a:	c5 9a       	sbi	0x18, 5	; 24
+  TFT_write_data(color);
+
+  y2 = (y2 - y1) + 2;
+  while (--y2) {
+    j = dx;
+    while (--j) {
+     e0c:	01 97       	sbiw	r24, 0x01	; 1
+     e0e:	00 97       	sbiw	r24, 0x00	; 0
+     e10:	d9 f7       	brne	.-10     	; 0xe08 <TFT_draw_box+0x38>
+  PORTB &= ~(_BV(TFT_CS));
+  TFT_write_address(x1, y1, x2, y2);
+  TFT_write_data(color);
+
+  y2 = (y2 - y1) + 2;
+  while (--y2) {
+     e12:	21 50       	subi	r18, 0x01	; 1
+     e14:	31 09       	sbc	r19, r1
+     e16:	21 15       	cp	r18, r1
+     e18:	31 05       	cpc	r19, r1
+     e1a:	29 f0       	breq	.+10     	; 0xe26 <TFT_draw_box+0x56>
+    j = dx;
+    while (--j) {
+     e1c:	ca 01       	movw	r24, r20
+     e1e:	41 15       	cp	r20, r1
+     e20:	51 05       	cpc	r21, r1
+     e22:	91 f7       	brne	.-28     	; 0xe08 <TFT_draw_box+0x38>
+     e24:	f6 cf       	rjmp	.-20     	; 0xe12 <TFT_draw_box+0x42>
+      PORTB &= ~(_BV(TFT_WR));
+      PORTB |= _BV(TFT_WR);
+    }
+  }
+
+  PORTB |= _BV(TFT_CS);
+     e26:	c7 9a       	sbi	0x18, 7	; 24
+}
+     e28:	df 91       	pop	r29
+     e2a:	cf 91       	pop	r28
+     e2c:	1f 91       	pop	r17
+     e2e:	0f 91       	pop	r16
+     e30:	ff 90       	pop	r15
+     e32:	ef 90       	pop	r14
+     e34:	df 90       	pop	r13
+     e36:	cf 90       	pop	r12
+     e38:	08 95       	ret
+
+00000e3a <TFT_box_outline>:
+
+void TFT_box_outline(uint16_t x1, uint16_t y1, uint16_t x2,
+                     uint16_t y2, uint16_t width, uint16_t color) {
+     e3a:	4f 92       	push	r4
+     e3c:	5f 92       	push	r5
+     e3e:	6f 92       	push	r6
+     e40:	7f 92       	push	r7
+     e42:	8f 92       	push	r8
+     e44:	9f 92       	push	r9
+     e46:	af 92       	push	r10
+     e48:	bf 92       	push	r11
+     e4a:	cf 92       	push	r12
+     e4c:	df 92       	push	r13
+     e4e:	ef 92       	push	r14
+     e50:	ff 92       	push	r15
+     e52:	0f 93       	push	r16
+     e54:	1f 93       	push	r17
+     e56:	cf 93       	push	r28
+     e58:	df 93       	push	r29
+     e5a:	ec 01       	movw	r28, r24
+     e5c:	6a 01       	movw	r12, r20
+     e5e:	29 01       	movw	r4, r18
+  width-=1;
+     e60:	38 01       	movw	r6, r16
+     e62:	81 e0       	ldi	r24, 0x01	; 1
+     e64:	68 1a       	sub	r6, r24
+     e66:	71 08       	sbc	r7, r1
+  TFT_draw_box(x1, y1, x2, y1 + width, color);
+     e68:	43 01       	movw	r8, r6
+     e6a:	86 0e       	add	r8, r22
+     e6c:	97 1e       	adc	r9, r23
+     e6e:	87 01       	movw	r16, r14
+     e70:	94 01       	movw	r18, r8
+     e72:	ce 01       	movw	r24, r28
+     e74:	0e 94 e8 06 	call	0xdd0	; 0xdd0 <TFT_draw_box>
+
+  TFT_draw_box(x1, y1+width, x1+width, y2-width, color);
+     e78:	52 01       	movw	r10, r4
+     e7a:	a6 18       	sub	r10, r6
+     e7c:	b7 08       	sbc	r11, r7
+     e7e:	a3 01       	movw	r20, r6
+     e80:	4c 0f       	add	r20, r28
+     e82:	5d 1f       	adc	r21, r29
+     e84:	95 01       	movw	r18, r10
+     e86:	b4 01       	movw	r22, r8
+     e88:	ce 01       	movw	r24, r28
+     e8a:	0e 94 e8 06 	call	0xdd0	; 0xdd0 <TFT_draw_box>
+  TFT_draw_box(x2-width, y1+width, x2, y2-width, color);
+     e8e:	95 01       	movw	r18, r10
+     e90:	a6 01       	movw	r20, r12
+     e92:	b4 01       	movw	r22, r8
+     e94:	c6 01       	movw	r24, r12
+     e96:	86 19       	sub	r24, r6
+     e98:	97 09       	sbc	r25, r7
+     e9a:	0e 94 e8 06 	call	0xdd0	; 0xdd0 <TFT_draw_box>
+
+  TFT_draw_box(x1, y2 - width, x2, y2, color);
+     e9e:	92 01       	movw	r18, r4
+     ea0:	a6 01       	movw	r20, r12
+     ea2:	b5 01       	movw	r22, r10
+     ea4:	ce 01       	movw	r24, r28
+     ea6:	0e 94 e8 06 	call	0xdd0	; 0xdd0 <TFT_draw_box>
+}
+     eaa:	df 91       	pop	r29
+     eac:	cf 91       	pop	r28
+     eae:	1f 91       	pop	r17
+     eb0:	0f 91       	pop	r16
+     eb2:	ff 90       	pop	r15
+     eb4:	ef 90       	pop	r14
+     eb6:	df 90       	pop	r13
+     eb8:	cf 90       	pop	r12
+     eba:	bf 90       	pop	r11
+     ebc:	af 90       	pop	r10
+     ebe:	9f 90       	pop	r9
+     ec0:	8f 90       	pop	r8
+     ec2:	7f 90       	pop	r7
+     ec4:	6f 90       	pop	r6
+     ec6:	5f 90       	pop	r5
+     ec8:	4f 90       	pop	r4
+     eca:	08 95       	ret
+
+00000ecc <TFT_init>:
+  TFT_write_data(color);
+  PORTB |= _BV(TFT_CS);
+}
+
+void TFT_init(void) {
+  PORTB |= _BV(TFT_RD);
+     ecc:	c6 9a       	sbi	0x18, 6	; 24
+
+  PORTB |= _BV(TFT_RST);
+     ece:	c3 9a       	sbi	0x18, 3	; 24
+     ed0:	81 ee       	ldi	r24, 0xE1	; 225
+     ed2:	94 e0       	ldi	r25, 0x04	; 4
+     ed4:	01 97       	sbiw	r24, 0x01	; 1
+     ed6:	f1 f7       	brne	.-4      	; 0xed4 <TFT_init+0x8>
+     ed8:	00 c0       	rjmp	.+0      	; 0xeda <TFT_init+0xe>
+     eda:	00 00       	nop
+  _delay_ms(5);
+  PORTB &= ~(_BV(TFT_RST));
+     edc:	c3 98       	cbi	0x18, 3	; 24
+     ede:	85 ea       	ldi	r24, 0xA5	; 165
+     ee0:	9e e0       	ldi	r25, 0x0E	; 14
+     ee2:	01 97       	sbiw	r24, 0x01	; 1
+     ee4:	f1 f7       	brne	.-4      	; 0xee2 <TFT_init+0x16>
+     ee6:	00 c0       	rjmp	.+0      	; 0xee8 <TFT_init+0x1c>
+     ee8:	00 00       	nop
+  _delay_ms(15);
+  PORTB |= _BV(TFT_RST);
+     eea:	c3 9a       	sbi	0x18, 3	; 24
+     eec:	85 ea       	ldi	r24, 0xA5	; 165
+     eee:	9e e0       	ldi	r25, 0x0E	; 14
+     ef0:	01 97       	sbiw	r24, 0x01	; 1
+     ef2:	f1 f7       	brne	.-4      	; 0xef0 <TFT_init+0x24>
+     ef4:	00 c0       	rjmp	.+0      	; 0xef6 <TFT_init+0x2a>
+     ef6:	00 00       	nop
+  _delay_ms(15);
+
+  PORTB &= ~(_BV(TFT_CS));
+     ef8:	c7 98       	cbi	0x18, 7	; 24
+
+  TFT_write_command_data(0x0000,0x0001); // Turn on oscillator
+     efa:	61 e0       	ldi	r22, 0x01	; 1
+     efc:	70 e0       	ldi	r23, 0x00	; 0
+     efe:	80 e0       	ldi	r24, 0x00	; 0
+     f00:	90 e0       	ldi	r25, 0x00	; 0
+     f02:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0003,0xA8A4); // Power control
+     f06:	64 ea       	ldi	r22, 0xA4	; 164
+     f08:	78 ea       	ldi	r23, 0xA8	; 168
+     f0a:	83 e0       	ldi	r24, 0x03	; 3
+     f0c:	90 e0       	ldi	r25, 0x00	; 0
+     f0e:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x000C,0x0000); // Power control 2
+     f12:	60 e0       	ldi	r22, 0x00	; 0
+     f14:	70 e0       	ldi	r23, 0x00	; 0
+     f16:	8c e0       	ldi	r24, 0x0C	; 12
+     f18:	90 e0       	ldi	r25, 0x00	; 0
+     f1a:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x000D,0x000C); // Power control 3
+     f1e:	6c e0       	ldi	r22, 0x0C	; 12
+     f20:	70 e0       	ldi	r23, 0x00	; 0
+     f22:	8d e0       	ldi	r24, 0x0D	; 13
+     f24:	90 e0       	ldi	r25, 0x00	; 0
+     f26:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x000E,0x2B00); // Power control 4
+     f2a:	60 e0       	ldi	r22, 0x00	; 0
+     f2c:	7b e2       	ldi	r23, 0x2B	; 43
+     f2e:	8e e0       	ldi	r24, 0x0E	; 14
+     f30:	90 e0       	ldi	r25, 0x00	; 0
+     f32:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x001E,0x00B7); // Power control 5
+     f36:	67 eb       	ldi	r22, 0xB7	; 183
+     f38:	70 e0       	ldi	r23, 0x00	; 0
+     f3a:	8e e1       	ldi	r24, 0x1E	; 30
+     f3c:	90 e0       	ldi	r25, 0x00	; 0
+     f3e:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0001,0x2B3F); // Driver Output Control
+     f42:	6f e3       	ldi	r22, 0x3F	; 63
+     f44:	7b e2       	ldi	r23, 0x2B	; 43
+     f46:	81 e0       	ldi	r24, 0x01	; 1
+     f48:	90 e0       	ldi	r25, 0x00	; 0
+     f4a:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0002,0x0600); // LCD Driving Waveform
+     f4e:	60 e0       	ldi	r22, 0x00	; 0
+     f50:	76 e0       	ldi	r23, 0x06	; 6
+     f52:	82 e0       	ldi	r24, 0x02	; 2
+     f54:	90 e0       	ldi	r25, 0x00	; 0
+     f56:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0010,0x0000); // Sleep Mode
+     f5a:	60 e0       	ldi	r22, 0x00	; 0
+     f5c:	70 e0       	ldi	r23, 0x00	; 0
+     f5e:	80 e1       	ldi	r24, 0x10	; 16
+     f60:	90 e0       	ldi	r25, 0x00	; 0
+     f62:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0011,0x6070); // Entry Mode
+     f66:	60 e7       	ldi	r22, 0x70	; 112
+     f68:	70 e6       	ldi	r23, 0x60	; 96
+     f6a:	81 e1       	ldi	r24, 0x11	; 17
+     f6c:	90 e0       	ldi	r25, 0x00	; 0
+     f6e:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0005,0x0000); // Compare register
+     f72:	60 e0       	ldi	r22, 0x00	; 0
+     f74:	70 e0       	ldi	r23, 0x00	; 0
+     f76:	85 e0       	ldi	r24, 0x05	; 5
+     f78:	90 e0       	ldi	r25, 0x00	; 0
+     f7a:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0006,0x0000); // Compare register
+     f7e:	60 e0       	ldi	r22, 0x00	; 0
+     f80:	70 e0       	ldi	r23, 0x00	; 0
+     f82:	86 e0       	ldi	r24, 0x06	; 6
+     f84:	90 e0       	ldi	r25, 0x00	; 0
+     f86:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0016,0xEF1C); // Horizontal Porch
+     f8a:	6c e1       	ldi	r22, 0x1C	; 28
+     f8c:	7f ee       	ldi	r23, 0xEF	; 239
+     f8e:	86 e1       	ldi	r24, 0x16	; 22
+     f90:	90 e0       	ldi	r25, 0x00	; 0
+     f92:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0017,0x0003); // Vertical Porch
+     f96:	63 e0       	ldi	r22, 0x03	; 3
+     f98:	70 e0       	ldi	r23, 0x00	; 0
+     f9a:	87 e1       	ldi	r24, 0x17	; 23
+     f9c:	90 e0       	ldi	r25, 0x00	; 0
+     f9e:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0007,0x0233); // Display Control
+     fa2:	63 e3       	ldi	r22, 0x33	; 51
+     fa4:	72 e0       	ldi	r23, 0x02	; 2
+     fa6:	87 e0       	ldi	r24, 0x07	; 7
+     fa8:	90 e0       	ldi	r25, 0x00	; 0
+     faa:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x000B,0x0000); // Frame cycle control
+     fae:	60 e0       	ldi	r22, 0x00	; 0
+     fb0:	70 e0       	ldi	r23, 0x00	; 0
+     fb2:	8b e0       	ldi	r24, 0x0B	; 11
+     fb4:	90 e0       	ldi	r25, 0x00	; 0
+     fb6:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x000F,0x0000); // Gate scan start position
+     fba:	60 e0       	ldi	r22, 0x00	; 0
+     fbc:	70 e0       	ldi	r23, 0x00	; 0
+     fbe:	8f e0       	ldi	r24, 0x0F	; 15
+     fc0:	90 e0       	ldi	r25, 0x00	; 0
+     fc2:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0041,0x0000); // Vertical scroll control
+     fc6:	60 e0       	ldi	r22, 0x00	; 0
+     fc8:	70 e0       	ldi	r23, 0x00	; 0
+     fca:	81 e4       	ldi	r24, 0x41	; 65
+     fcc:	90 e0       	ldi	r25, 0x00	; 0
+     fce:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0042,0x0000); // Horiz scroll control
+     fd2:	60 e0       	ldi	r22, 0x00	; 0
+     fd4:	70 e0       	ldi	r23, 0x00	; 0
+     fd6:	82 e4       	ldi	r24, 0x42	; 66
+     fd8:	90 e0       	ldi	r25, 0x00	; 0
+     fda:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0048,0x0000); // First window start
+     fde:	60 e0       	ldi	r22, 0x00	; 0
+     fe0:	70 e0       	ldi	r23, 0x00	; 0
+     fe2:	88 e4       	ldi	r24, 0x48	; 72
+     fe4:	90 e0       	ldi	r25, 0x00	; 0
+     fe6:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0049,0x013F); // First window end
+     fea:	6f e3       	ldi	r22, 0x3F	; 63
+     fec:	71 e0       	ldi	r23, 0x01	; 1
+     fee:	89 e4       	ldi	r24, 0x49	; 73
+     ff0:	90 e0       	ldi	r25, 0x00	; 0
+     ff2:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x004A,0x0000); // Second window start
+     ff6:	60 e0       	ldi	r22, 0x00	; 0
+     ff8:	70 e0       	ldi	r23, 0x00	; 0
+     ffa:	8a e4       	ldi	r24, 0x4A	; 74
+     ffc:	90 e0       	ldi	r25, 0x00	; 0
+     ffe:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x004B,0x0000); // Second window end
+    1002:	60 e0       	ldi	r22, 0x00	; 0
+    1004:	70 e0       	ldi	r23, 0x00	; 0
+    1006:	8b e4       	ldi	r24, 0x4B	; 75
+    1008:	90 e0       	ldi	r25, 0x00	; 0
+    100a:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0044,0xEF95); // Horizontal RAM addr pos
+    100e:	65 e9       	ldi	r22, 0x95	; 149
+    1010:	7f ee       	ldi	r23, 0xEF	; 239
+    1012:	84 e4       	ldi	r24, 0x44	; 68
+    1014:	90 e0       	ldi	r25, 0x00	; 0
+    1016:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0045,0x0000); // Vertical RAM addr start pos
+    101a:	60 e0       	ldi	r22, 0x00	; 0
+    101c:	70 e0       	ldi	r23, 0x00	; 0
+    101e:	85 e4       	ldi	r24, 0x45	; 69
+    1020:	90 e0       	ldi	r25, 0x00	; 0
+    1022:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0046,0x013F); // Vertical RAM addr end pos
+    1026:	6f e3       	ldi	r22, 0x3F	; 63
+    1028:	71 e0       	ldi	r23, 0x01	; 1
+    102a:	86 e4       	ldi	r24, 0x46	; 70
+    102c:	90 e0       	ldi	r25, 0x00	; 0
+    102e:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0030,0x0707); // gamma control 1
+    1032:	67 e0       	ldi	r22, 0x07	; 7
+    1034:	77 e0       	ldi	r23, 0x07	; 7
+    1036:	80 e3       	ldi	r24, 0x30	; 48
+    1038:	90 e0       	ldi	r25, 0x00	; 0
+    103a:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0031,0x0204);
+    103e:	64 e0       	ldi	r22, 0x04	; 4
+    1040:	72 e0       	ldi	r23, 0x02	; 2
+    1042:	81 e3       	ldi	r24, 0x31	; 49
+    1044:	90 e0       	ldi	r25, 0x00	; 0
+    1046:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0032,0x0204);
+    104a:	64 e0       	ldi	r22, 0x04	; 4
+    104c:	72 e0       	ldi	r23, 0x02	; 2
+    104e:	82 e3       	ldi	r24, 0x32	; 50
+    1050:	90 e0       	ldi	r25, 0x00	; 0
+    1052:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0033,0x0502);
+    1056:	62 e0       	ldi	r22, 0x02	; 2
+    1058:	75 e0       	ldi	r23, 0x05	; 5
+    105a:	83 e3       	ldi	r24, 0x33	; 51
+    105c:	90 e0       	ldi	r25, 0x00	; 0
+    105e:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0034,0x0507);
+    1062:	67 e0       	ldi	r22, 0x07	; 7
+    1064:	75 e0       	ldi	r23, 0x05	; 5
+    1066:	84 e3       	ldi	r24, 0x34	; 52
+    1068:	90 e0       	ldi	r25, 0x00	; 0
+    106a:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0035,0x0204);
+    106e:	64 e0       	ldi	r22, 0x04	; 4
+    1070:	72 e0       	ldi	r23, 0x02	; 2
+    1072:	85 e3       	ldi	r24, 0x35	; 53
+    1074:	90 e0       	ldi	r25, 0x00	; 0
+    1076:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0036,0x0204);
+    107a:	64 e0       	ldi	r22, 0x04	; 4
+    107c:	72 e0       	ldi	r23, 0x02	; 2
+    107e:	86 e3       	ldi	r24, 0x36	; 54
+    1080:	90 e0       	ldi	r25, 0x00	; 0
+    1082:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0037,0x0502);
+    1086:	62 e0       	ldi	r22, 0x02	; 2
+    1088:	75 e0       	ldi	r23, 0x05	; 5
+    108a:	87 e3       	ldi	r24, 0x37	; 55
+    108c:	90 e0       	ldi	r25, 0x00	; 0
+    108e:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x003A,0x0302);
+    1092:	62 e0       	ldi	r22, 0x02	; 2
+    1094:	73 e0       	ldi	r23, 0x03	; 3
+    1096:	8a e3       	ldi	r24, 0x3A	; 58
+    1098:	90 e0       	ldi	r25, 0x00	; 0
+    109a:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x003B,0x0302); // gamma control 10
+    109e:	62 e0       	ldi	r22, 0x02	; 2
+    10a0:	73 e0       	ldi	r23, 0x03	; 3
+    10a2:	8b e3       	ldi	r24, 0x3B	; 59
+    10a4:	90 e0       	ldi	r25, 0x00	; 0
+    10a6:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0023,0x0000); // RAM write data mask 1
+    10aa:	60 e0       	ldi	r22, 0x00	; 0
+    10ac:	70 e0       	ldi	r23, 0x00	; 0
+    10ae:	83 e2       	ldi	r24, 0x23	; 35
+    10b0:	90 e0       	ldi	r25, 0x00	; 0
+    10b2:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x0024,0x0000); // RAM write data mask 2
+    10b6:	60 e0       	ldi	r22, 0x00	; 0
+    10b8:	70 e0       	ldi	r23, 0x00	; 0
+    10ba:	84 e2       	ldi	r24, 0x24	; 36
+    10bc:	90 e0       	ldi	r25, 0x00	; 0
+    10be:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+//  TFT_write_command_data(0x0025,0x8000); //
+  TFT_write_command_data(0x004f,0x0000); // GDDRAM Y addr counter
+    10c2:	60 e0       	ldi	r22, 0x00	; 0
+    10c4:	70 e0       	ldi	r23, 0x00	; 0
+    10c6:	8f e4       	ldi	r24, 0x4F	; 79
+    10c8:	90 e0       	ldi	r25, 0x00	; 0
+    10ca:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command_data(0x004e,0x0000); // GDDRAM X addr counter
+    10ce:	60 e0       	ldi	r22, 0x00	; 0
+    10d0:	70 e0       	ldi	r23, 0x00	; 0
+    10d2:	8e e4       	ldi	r24, 0x4E	; 78
+    10d4:	90 e0       	ldi	r25, 0x00	; 0
+    10d6:	0e 94 8b 06 	call	0xd16	; 0xd16 <TFT_write_command_data>
+  TFT_write_command(0x0022); // RAM data write
+    10da:	82 e2       	ldi	r24, 0x22	; 34
+    10dc:	90 e0       	ldi	r25, 0x00	; 0
+    10de:	0e 94 83 06 	call	0xd06	; 0xd06 <TFT_write_command>
+
+  PORTB &= ~(_BV(TFT_CS));
+    10e2:	c7 98       	cbi	0x18, 7	; 24
+    10e4:	08 95       	ret
+
+000010e6 <TFT_char>:
+}
+
+void TFT_char(const uint8_t *font, uint8_t ch,
+              uint16_t x, uint16_t y,
+              uint16_t fg_color, uint16_t bg_color,
+              uint16_t width, uint16_t height) {
+    10e6:	2f 92       	push	r2
+    10e8:	3f 92       	push	r3
+    10ea:	4f 92       	push	r4
+    10ec:	5f 92       	push	r5
+    10ee:	6f 92       	push	r6
+    10f0:	7f 92       	push	r7
+    10f2:	8f 92       	push	r8
+    10f4:	9f 92       	push	r9
+    10f6:	af 92       	push	r10
+    10f8:	bf 92       	push	r11
+    10fa:	cf 92       	push	r12
+    10fc:	df 92       	push	r13
+    10fe:	ef 92       	push	r14
+    1100:	ff 92       	push	r15
+    1102:	0f 93       	push	r16
+    1104:	1f 93       	push	r17
+    1106:	cf 93       	push	r28
+    1108:	df 93       	push	r29
+    110a:	00 d0       	rcall	.+0      	; 0x110c <TFT_char+0x26>
+    110c:	00 d0       	rcall	.+0      	; 0x110e <TFT_char+0x28>
+    110e:	cd b7       	in	r28, 0x3d	; 61
+    1110:	de b7       	in	r29, 0x3e	; 62
+    1112:	a6 2f       	mov	r26, r22
+    1114:	fa 01       	movw	r30, r20
+    1116:	b9 01       	movw	r22, r18
+  uint16_t j, k;
+  const uint8_t *bmp_addr = font + ((ch - ' ')*height*(width/8));
+    1118:	96 01       	movw	r18, r12
+    111a:	36 95       	lsr	r19
+    111c:	27 95       	ror	r18
+    111e:	36 95       	lsr	r19
+    1120:	27 95       	ror	r18
+    1122:	36 95       	lsr	r19
+    1124:	27 95       	ror	r18
+    1126:	2a 9d       	mul	r18, r10
+    1128:	a0 01       	movw	r20, r0
+    112a:	2b 9d       	mul	r18, r11
+    112c:	50 0d       	add	r21, r0
+    112e:	3a 9d       	mul	r19, r10
+    1130:	50 0d       	add	r21, r0
+    1132:	11 24       	eor	r1, r1
+    1134:	2a 2f       	mov	r18, r26
+    1136:	30 e0       	ldi	r19, 0x00	; 0
+    1138:	20 52       	subi	r18, 0x20	; 32
+    113a:	31 09       	sbc	r19, r1
+    113c:	42 9f       	mul	r20, r18
+    113e:	40 01       	movw	r8, r0
+    1140:	43 9f       	mul	r20, r19
+    1142:	90 0c       	add	r9, r0
+    1144:	52 9f       	mul	r21, r18
+    1146:	90 0c       	add	r9, r0
+    1148:	11 24       	eor	r1, r1
+    114a:	88 0e       	add	r8, r24
+    114c:	99 1e       	adc	r9, r25
+  uint8_t bmp_byte = 0, pixel_mask = 0x80;
+  uint8_t bit_set = 0;
+
+  PORTB &= ~(_BV(TFT_CS));
+    114e:	c7 98       	cbi	0x18, 7	; 24
+  TFT_write_address(x, y, x + width - 1, y + height - 1);
+    1150:	9b 01       	movw	r18, r22
+    1152:	21 50       	subi	r18, 0x01	; 1
+    1154:	31 09       	sbc	r19, r1
+    1156:	2a 0d       	add	r18, r10
+    1158:	3b 1d       	adc	r19, r11
+    115a:	af 01       	movw	r20, r30
+    115c:	41 50       	subi	r20, 0x01	; 1
+    115e:	51 09       	sbc	r21, r1
+    1160:	4c 0d       	add	r20, r12
+    1162:	5d 1d       	adc	r21, r13
+    1164:	cf 01       	movw	r24, r30
+    1166:	0e 94 96 06 	call	0xd2c	; 0xd2c <TFT_write_address>
+
+  k = 0;
+  while (height--)
+    116a:	35 01       	movw	r6, r10
+              uint16_t x, uint16_t y,
+              uint16_t fg_color, uint16_t bg_color,
+              uint16_t width, uint16_t height) {
+  uint16_t j, k;
+  const uint8_t *bmp_addr = font + ((ch - ' ')*height*(width/8));
+  uint8_t bmp_byte = 0, pixel_mask = 0x80;
+    116c:	68 94       	set
+    116e:	33 24       	eor	r3, r3
+    1170:	37 f8       	bld	r3, 7
+    1172:	21 2c       	mov	r2, r1
+  uint8_t bit_set = 0;
+
+  PORTB &= ~(_BV(TFT_CS));
+  TFT_write_address(x, y, x + width - 1, y + height - 1);
+
+  k = 0;
+    1174:	41 2c       	mov	r4, r1
+    1176:	51 2c       	mov	r5, r1
+  while (height--)
+  {
+    for (j = width; j; --j)
+    1178:	c9 82       	std	Y+1, r12	; 0x01
+    117a:	da 82       	std	Y+2, r13	; 0x02
+
+  PORTB &= ~(_BV(TFT_CS));
+  TFT_write_address(x, y, x + width - 1, y + height - 1);
+
+  k = 0;
+  while (height--)
+    117c:	28 c0       	rjmp	.+80     	; 0x11ce <TFT_char+0xe8>
+  {
+    for (j = width; j; --j)
+    {
+      if ((k % 8) == 0) {
+    117e:	c5 01       	movw	r24, r10
+    1180:	87 70       	andi	r24, 0x07	; 7
+    1182:	99 27       	eor	r25, r25
+    1184:	89 2b       	or	r24, r25
+    1186:	41 f4       	brne	.+16     	; 0x1198 <TFT_char+0xb2>
+        bmp_byte = pgm_read_byte(bmp_addr);
+    1188:	f4 01       	movw	r30, r8
+    118a:	24 90       	lpm	r2, Z
+        pixel_mask = 0x80;
+        ++bmp_addr;
+    118c:	ff ef       	ldi	r31, 0xFF	; 255
+    118e:	8f 1a       	sub	r8, r31
+    1190:	9f 0a       	sbc	r9, r31
+  {
+    for (j = width; j; --j)
+    {
+      if ((k % 8) == 0) {
+        bmp_byte = pgm_read_byte(bmp_addr);
+        pixel_mask = 0x80;
+    1192:	68 94       	set
+    1194:	33 24       	eor	r3, r3
+    1196:	37 f8       	bld	r3, 7
+        ++bmp_addr;
+      }
+
+      bit_set = bmp_byte & pixel_mask;
+    1198:	83 2d       	mov	r24, r3
+    119a:	82 21       	and	r24, r2
+
+      pixel_mask >>= 1;
+    119c:	36 94       	lsr	r3
+      ++k;
+    119e:	9f ef       	ldi	r25, 0xFF	; 255
+    11a0:	a9 1a       	sub	r10, r25
+    11a2:	b9 0a       	sbc	r11, r25
+
+      if (bit_set) {
+    11a4:	88 23       	and	r24, r24
+    11a6:	21 f0       	breq	.+8      	; 0x11b0 <TFT_char+0xca>
+        TFT_write_data(fg_color);
+    11a8:	c8 01       	movw	r24, r16
+    11aa:	0e 94 87 06 	call	0xd0e	; 0xd0e <TFT_write_data>
+    11ae:	03 c0       	rjmp	.+6      	; 0x11b6 <TFT_char+0xd0>
+      } else {
+        TFT_write_data(bg_color);
+    11b0:	c7 01       	movw	r24, r14
+    11b2:	0e 94 87 06 	call	0xd0e	; 0xd0e <TFT_write_data>
+  TFT_write_address(x, y, x + width - 1, y + height - 1);
+
+  k = 0;
+  while (height--)
+  {
+    for (j = width; j; --j)
+    11b6:	eb 81       	ldd	r30, Y+3	; 0x03
+    11b8:	fc 81       	ldd	r31, Y+4	; 0x04
+    11ba:	31 97       	sbiw	r30, 0x01	; 1
+    11bc:	fc 83       	std	Y+4, r31	; 0x04
+    11be:	eb 83       	std	Y+3, r30	; 0x03
+    11c0:	ef 2b       	or	r30, r31
+    11c2:	e9 f6       	brne	.-70     	; 0x117e <TFT_char+0x98>
+    11c4:	4c 0c       	add	r4, r12
+    11c6:	5d 1c       	adc	r5, r13
+    11c8:	f1 e0       	ldi	r31, 0x01	; 1
+    11ca:	6f 1a       	sub	r6, r31
+    11cc:	71 08       	sbc	r7, r1
+
+  PORTB &= ~(_BV(TFT_CS));
+  TFT_write_address(x, y, x + width - 1, y + height - 1);
+
+  k = 0;
+  while (height--)
+    11ce:	61 14       	cp	r6, r1
+    11d0:	71 04       	cpc	r7, r1
+    11d2:	49 f0       	breq	.+18     	; 0x11e6 <TFT_char+0x100>
+  {
+    for (j = width; j; --j)
+    11d4:	c1 14       	cp	r12, r1
+    11d6:	d1 04       	cpc	r13, r1
+    11d8:	b9 f3       	breq	.-18     	; 0x11c8 <TFT_char+0xe2>
+    11da:	52 01       	movw	r10, r4
+    11dc:	89 81       	ldd	r24, Y+1	; 0x01
+    11de:	8b 83       	std	Y+3, r24	; 0x03
+    11e0:	9a 81       	ldd	r25, Y+2	; 0x02
+    11e2:	9c 83       	std	Y+4, r25	; 0x04
+    11e4:	cc cf       	rjmp	.-104    	; 0x117e <TFT_char+0x98>
+        TFT_write_data(bg_color);
+      }
+    }
+  }
+
+  PORTB |= _BV(TFT_CS);
+    11e6:	c7 9a       	sbi	0x18, 7	; 24
+}
+    11e8:	0f 90       	pop	r0
+    11ea:	0f 90       	pop	r0
+    11ec:	0f 90       	pop	r0
+    11ee:	0f 90       	pop	r0
+    11f0:	df 91       	pop	r29
+    11f2:	cf 91       	pop	r28
+    11f4:	1f 91       	pop	r17
+    11f6:	0f 91       	pop	r16
+    11f8:	ff 90       	pop	r15
+    11fa:	ef 90       	pop	r14
+    11fc:	df 90       	pop	r13
+    11fe:	cf 90       	pop	r12
+    1200:	bf 90       	pop	r11
+    1202:	af 90       	pop	r10
+    1204:	9f 90       	pop	r9
+    1206:	8f 90       	pop	r8
+    1208:	7f 90       	pop	r7
+    120a:	6f 90       	pop	r6
+    120c:	5f 90       	pop	r5
+    120e:	4f 90       	pop	r4
+    1210:	3f 90       	pop	r3
+    1212:	2f 90       	pop	r2
+    1214:	08 95       	ret
+
+00001216 <_exit>:
+    1216:	f8 94       	cli
+
+00001218 <__stop_program>:
+    1218:	ff cf       	rjmp	.-2      	; 0x1218 <__stop_program>

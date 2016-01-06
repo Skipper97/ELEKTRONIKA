@@ -1,0 +1,22 @@
+<VBBSolution name="VBB1">
+	<LAYOUT currentView="0" >
+	<VIEW id="1">
+		<PANE>[VBB1]Breadboard0.VBB</PANE>
+	</VIEW>
+	<VIEW id="2">
+	</VIEW>
+	<VIEW id="3">
+	</VIEW>
+	</LAYOUT>
+<PROJECTS>
+<PROJECT>VBB1.SIM</PROJECT>
+<REFERENCES>
+<VBB-EXCLUDES>
+</VBB-EXCLUDES>
+<USER-INCLUDES>
+</USER-INCLUDES>
+<WEB-INCLUDES>
+</WEB-INCLUDES>
+</REFERENCES>
+</PROJECTS>
+</VBBSolution>
